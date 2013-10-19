@@ -1,0 +1,11 @@
+[user]
+	name = Anton Maminov
+  email = anton.linux@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
