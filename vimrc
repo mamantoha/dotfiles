@@ -16,8 +16,6 @@ Bundle 'jistr/vim-nerdtree-tabs'
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 Bundle 'bling/vim-airline'
 Bundle 'jpo/vim-railscasts-theme'
-Bundle 'jtratner/vim-flavored-markdown'
-Bundle 'slim-template/vim-slim'
 
 Bundle 'tpope/vim-fugitive'
 
@@ -41,13 +39,8 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+ " open NERDTree on vim startup
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
-
-" highlight using Github Flavored Markdown
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
 
 set fileencodings=utf-8,cp1251,cp866,koi8-u
 set encoding=utf-8
@@ -78,6 +71,22 @@ set backspace=indent,eol,start           "allow backspacing over everything in i
 set incsearch                            "find the next match as we type the search
 set hlsearch                             "hilight searches by default
 set ignorecase                           "ignore case when searching
+
+set foldmethod=syntax
+set nofoldenable
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+" Force saving files that require root permission
+cmap w!! %!sudo tee > /dev/null %
+
+" Remap leader to comma
+let mapleader = ","
+
+" Clear search highlights
+noremap <silent><Leader>/ :nohls<CR>
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
