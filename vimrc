@@ -16,6 +16,8 @@ Bundle 'jistr/vim-nerdtree-tabs'
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 Bundle 'bling/vim-airline'
 Bundle 'jpo/vim-railscasts-theme'
+Bundle 'jtratner/vim-flavored-markdown'
+Bundle 'slim-template/vim-slim'
 
 Bundle 'tpope/vim-fugitive'
 
