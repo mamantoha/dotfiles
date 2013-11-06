@@ -44,6 +44,13 @@ let g:airline_symbols.linenr = ''
  " open NERDTree on vim startup
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
 
+" highlight using Github Flavored Markdown
+augroup markdown
+  au!
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
+
 set fileencodings=utf-8,cp1251,cp866,koi8-u
 set encoding=utf-8
 set termencoding=utf-8
