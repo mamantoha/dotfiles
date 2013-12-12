@@ -1,6 +1,7 @@
 set nocompatible                         "don't need to keep compatibility with Vi
 filetype off                   " required!
 
+" $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
