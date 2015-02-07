@@ -23,6 +23,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on     " required!
+syntax on
 
 set cursorline                           "underline the current line in the file
 "set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
