@@ -12,8 +12,9 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-endwise'
 
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 Bundle 'bling/vim-airline'
