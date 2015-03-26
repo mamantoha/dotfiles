@@ -24,6 +24,9 @@ Bundle 'slim-template/vim-slim'
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'Shougo/neocomplete.vim'
+Bundle 'osyo-manga/vim-monster'
+
 filetype plugin indent on     " required!
 syntax on
 
@@ -107,6 +110,12 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+let g:neocomplete#enable_at_startup = 1
+" Use neocomplete.vim
+let g:neocomplete#force_omni_input_patterns = {
+\   'ruby' : '[^. *\t]\.\|\h\w*::',
+\}
 
 set number                               "Show line numbers
 
