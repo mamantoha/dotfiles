@@ -34,6 +34,16 @@ NeoBundle 'slim-template/vim-slim'
 
 NeoBundle 'tpope/vim-fugitive'
 
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'osyo-manga/vim-monster'
 
@@ -128,6 +138,9 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let g:neocomplete#enable_at_startup = 1
+" Set async completion.
+let g:monster#completion#rcodetools#backend = "async_rct_complete"
+
 " Use neocomplete.vim
 let g:neocomplete#force_omni_input_patterns = {
 \   'ruby' : '[^. *\t]\.\|\h\w*::',
