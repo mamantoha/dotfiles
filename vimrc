@@ -1,34 +1,50 @@
-set nocompatible                         "don't need to keep compatibility with Vi
-filetype off                   " required!
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
 
-" $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
 
-" let Vundle manage Vundle
-" required!
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-Bundle 'gmarik/vundle'
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-endwise'
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
+" My Bundles here:
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'tpope/vim-endwise'
 
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
-Bundle 'bling/vim-airline'
-Bundle 'jpo/vim-railscasts-theme'
-Bundle 'jtratner/vim-flavored-markdown'
-Bundle 'slim-template/vim-slim'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'jpo/vim-railscasts-theme'
+NeoBundle 'jtratner/vim-flavored-markdown'
+NeoBundle 'slim-template/vim-slim'
 
-Bundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive'
 
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'osyo-manga/vim-monster'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'osyo-manga/vim-monster'
 
-filetype plugin indent on     " required!
-syntax on
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
 
 set cursorline                           "underline the current line in the file
 "set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
