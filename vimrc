@@ -34,6 +34,9 @@ NeoBundle 'slim-template/vim-slim'
 
 NeoBundle 'tpope/vim-fugitive'
 
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-bundler'
+
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
@@ -117,6 +120,8 @@ set ignorecase                           "ignore case when searching
 set foldmethod=syntax
 set nofoldenable
 
+set noswapfile
+
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
@@ -137,7 +142,8 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-let g:neocomplete#enable_at_startup = 1
+" Execute the :NeoCompleteEnable
+" let g:neocomplete#enable_at_startup = 1
 " Set async completion.
 let g:monster#completion#rcodetools#backend = "async_rct_complete"
 
