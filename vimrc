@@ -22,6 +22,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 " My Bundles here:
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-endwise'
