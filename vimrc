@@ -55,6 +55,7 @@ call neobundle#end()
 
 " Required:
 filetype plugin indent on
+syntax on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -96,7 +97,7 @@ set termencoding=utf-8
 set laststatus=2
 
 set t_Co=256
-"colorscheme desert
+" colorscheme desert
 colorscheme railscasts
 
 " Підтримка мишки
