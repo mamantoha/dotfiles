@@ -28,7 +28,8 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-endwise'
 
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
-NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'jtratner/vim-flavored-markdown'
 NeoBundle 'slim-template/vim-slim'
@@ -50,6 +51,8 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'osyo-manga/vim-monster'
+
+NeoBundle 'wakatime/vim-wakatime'
 
 call neobundle#end()
 
