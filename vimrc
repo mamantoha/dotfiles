@@ -33,6 +33,7 @@ NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'jtratner/vim-flavored-markdown'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'kchmck/vim-coffee-script'
 
 NeoBundle 'tpope/vim-fugitive'
 
