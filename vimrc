@@ -21,9 +21,19 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 " My Bundles here:
+
+" Open new tab only if it doesn't exists,
+" otherwise switch to the already open tab
+" Create ~/.vim/nerdtree_plugin/override_tab_mapping.vim:
+"
+" call NERDTreeAddKeyMap({'key': 't', 'callback': 'NERDTreeMyOpenInTab', 'scope': 'FileNode', 'override': 1 })
+" function NERDTreeMyOpenInTab(node)
+"   call a:node.open({'reuse': "all", 'where': 't'})
+" endfunction
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'jistr/vim-nerdtree-tabs'
+
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-endwise'
 
