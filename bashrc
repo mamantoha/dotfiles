@@ -37,6 +37,9 @@ PS1="\[\e[32;1m\][\[\e[37;1m\]\u@\h\[\e[32;1m\]: \[\e[38;1m\]\w\[\e[32;1m\]]\[\e
 
 source /usr/share/doc/pkgfile/command-not-found.bash
 
+# Lviv
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION="924943"
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

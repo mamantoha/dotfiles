@@ -44,6 +44,7 @@ NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'jtratner/vim-flavored-markdown'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'isRuslan/vim-es6'
 
 NeoBundle 'tpope/vim-fugitive'
 
@@ -62,6 +63,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'osyo-manga/vim-monster'
+NeoBundle 'Konfekt/FastFold'
 
 NeoBundle 'wakatime/vim-wakatime'
 
