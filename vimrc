@@ -81,7 +81,7 @@ syntax on
 NeoBundleCheck
 
 set cursorline                           "underline the current line in the file
-"set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
+set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'bubblegum'
