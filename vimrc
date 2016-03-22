@@ -31,9 +31,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "   call a:node.open({'reuse': "all", 'where': 't'})
 " endfunction
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'airblade/vim-gitgutter'
+
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-endwise'
 
@@ -95,8 +98,8 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
- " open NERDTree on vim startup
-map <silent> <C-n> :NERDTreeTabsToggle<CR>
+" open NERDTree on vim startup
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " highlight using Github Flavored Markdown
 augroup markdown
