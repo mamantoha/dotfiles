@@ -114,6 +114,7 @@ set termencoding=utf-8
 
 "set statusline=%t\ %y%m%r[%{&fileencoding}][%{&spelllang}][%{&fileformat}]%<[%{strftime(\"%d.%m.%y\",getftime(expand(\"%:p\")))}]%k%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
+set lazyredraw
 
 set t_Co=256
 " colorscheme desert
