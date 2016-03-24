@@ -99,7 +99,7 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 " open NERDTree on vim startup
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeTabsToggle<CR>
 
 " highlight using Github Flavored Markdown
 augroup markdown
