@@ -20,6 +20,7 @@ complete -cf sudo
 complete -cf man
 
 export VISUAL="vim"
+export EDITOR='vim'
 
 alias ls='ls --color=auto'
 
