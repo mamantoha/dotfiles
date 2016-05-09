@@ -37,7 +37,7 @@ NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'airblade/vim-gitgutter'
 
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'tpope/vim-commentary'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-endwise'
 
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
