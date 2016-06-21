@@ -34,20 +34,28 @@ yaourt -S powerline
 
 ### rbenv plugins:
 
-ruby-build
+#### ruby-build
 
 ```
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/rbenv/ruby-build.git $(rbenv root)/plugins/ruby-build
 ```
 
-rbenv-vars
+#### rbenv-vars
 
 ```
-git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
+git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars
 ```
 
-rbenv-update
+#### rbenv-update
 
 ```
-git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
+git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update
 ```
+
+#### rbenv-default-gems
+
+```
+git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
+```
+
+Specify gems in `$(rbenv root)/default-gems` by name, one per line
