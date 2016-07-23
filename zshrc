@@ -86,6 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 setopt noincappendhistory
 setopt nosharehistory
+setopt nobeep
 
 export VISUAL="vim"
 
