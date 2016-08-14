@@ -70,11 +70,6 @@ NeoBundle 'Konfekt/FastFold'
 
 NeoBundle 'wakatime/vim-wakatime'
 
-NeoBundle 'mrtazz/simplenote.vim'
-" let g:SimplenoteUsername = "your simplenote username"
-" let g:SimplenotePassword = "your simplenote password"
-source ~/.simplenoterc
-
 call neobundle#end()
 
 " Required:

@@ -90,8 +90,6 @@ setopt nobeep
 
 export VISUAL="vim"
 
-alias ls='ls --color=auto'
-
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -101,11 +99,13 @@ alias grep='grep --color=auto'
 
 alias wttr='curl http://wttr.in/Lviv '
 
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
