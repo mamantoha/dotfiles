@@ -88,6 +88,8 @@ setopt noincappendhistory
 setopt nosharehistory
 setopt nobeep
 
+zstyle ':completion:*' insert-tab false
+
 export VISUAL="vim"
 
 # some more ls aliases
@@ -107,5 +109,3 @@ alias wttr='curl http://wttr.in/Lviv '
 
 # export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
