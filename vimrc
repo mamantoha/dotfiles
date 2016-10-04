@@ -30,6 +30,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " function NERDTreeMyOpenInTab(node)
 "   call a:node.open({'reuse': "all", 'where': 't'})
 " endfunction
+
+
+NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 NeoBundle 'jistr/vim-nerdtree-tabs'
