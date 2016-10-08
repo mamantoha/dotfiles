@@ -31,6 +31,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "   call a:node.open({'reuse': "all", 'where': 't'})
 " endfunction
 
+" Dependencies of snipmate
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
+NeoBundle "honza/vim-snippets"
+NeoBundle 'garbas/vim-snipmate'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'scrooloose/nerdtree'
@@ -42,11 +47,12 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'ervandew/supertab'
 
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'jpo/vim-railscasts-theme'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'jtratner/vim-flavored-markdown'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -119,9 +125,11 @@ set termencoding=utf-8
 set laststatus=2
 set lazyredraw
 
+set background=dark
+let g:molokai_original=1
+let g:rehash256=1
 set t_Co=256
-" colorscheme desert
-colorscheme railscasts
+colorscheme molokai
 
 " Specify background color
 highlight Normal ctermbg=none
@@ -163,8 +171,10 @@ let mapleader = ","
 " Clear search highlights
 noremap <silent><Leader>/ :nohls<CR>
 
+" Show trailing whitespace and spaces before a tab:
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
@@ -180,7 +190,7 @@ let g:neocomplete#force_omni_input_patterns = {
 \   'ruby' : '[^. *\t]\.\|\h\w*::',
 \}
 
-set number                               "Show line numbers
+set number " Show line numbers
 
 " Пробіл в нормальному режимі перелистує сторінки
 nmap <Space> <PageDown>
