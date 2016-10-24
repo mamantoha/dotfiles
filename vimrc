@@ -77,6 +77,8 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'osyo-manga/vim-monster'
 NeoBundle 'Konfekt/FastFold'
 
+NeoBundle 'elixir-lang/vim-elixir'
+
 NeoBundle 'wakatime/vim-wakatime'
 
 call neobundle#end()
