@@ -1,6 +1,8 @@
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
+" `"+y` - copy for X clipboard
+" `"+p` - paste from + after the cursor
 if has('vim_starting')
   if &compatible
     set nocompatible               " Be iMproved
@@ -137,8 +139,12 @@ colorscheme molokai
 highlight Normal ctermbg=none
 
 " Підтримка мишки
-"set mouse=a
-"set mousemodel=popup
+set mouse=a
+set mousemodel=popup
+
+" Set this to the name of your terminal that supports mouse codes.
+" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
+set ttymouse=xterm2
 
 set shiftwidth=2                         "number of spaces to use in each autoindent step
 set tabstop=2                            "two tab spaces
