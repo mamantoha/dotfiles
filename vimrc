@@ -13,9 +13,6 @@ if has('vim_starting')
 endif
 
 function! GetRunningOS()
-  if has("win32")
-    return "win"
-  endif
   if has("unix")
     if system('uname')=~'Darwin'
       return "mac"
