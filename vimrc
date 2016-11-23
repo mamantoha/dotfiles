@@ -12,6 +12,21 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
+function! GetRunningOS()
+  if has("win32")
+    return "win"
+  endif
+  if has("unix")
+    if system('uname')=~'Darwin'
+      return "mac"
+    else
+      return "linux"
+    endif
+  endif
+endfunction
+
+let os=GetRunningOS()
+
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
 
@@ -114,7 +129,6 @@ let g:airline_symbols.linenr = ''
 " open NERDTree on vim startup
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
 
-
 " highlight using Github Flavored Markdown
 augroup markdown
   au!
@@ -138,9 +152,10 @@ colorscheme molokai
 " Specify background color
 highlight Normal ctermbg=none
 
-" Підтримка мишки
-set mouse=a
-set mousemodel=popup
+if os=='Linux'
+  set mouse=a
+  set mousemodel=popup
+endif
 
 " Set this to the name of your terminal that supports mouse codes.
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
