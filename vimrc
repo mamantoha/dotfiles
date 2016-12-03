@@ -66,7 +66,7 @@ NeoBundle 'ervandew/supertab'
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'tomasr/molokai'
+NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'jtratner/vim-flavored-markdown'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -141,10 +141,9 @@ set laststatus=2
 set lazyredraw
 
 set background=dark
-let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
-colorscheme molokai
+colorscheme railscasts
 
 " Specify background color
 highlight Normal ctermbg=none
