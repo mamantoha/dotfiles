@@ -3,14 +3,6 @@ if !1 | finish | endif
 
 " `"+y` - copy for X clipboard
 " `"+p` - paste from + after the cursor
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
 
 function! GetRunningOS()
   if has("unix")
@@ -24,17 +16,82 @@ endfunction
 
 let os=GetRunningOS()
 
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+if &compatible
+  set nocompatible               " Be iMproved
+endif
 
-" Let NeoBundle manage NeoBundle
 " Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-" My Bundles here:
+" Required:
+if dein#load_state('~/.vim/bundles')
+  call dein#begin('~/.vim/bundles')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+
+  " Dependencies of snipmate
+  call dein#add("MarcWeber/vim-addon-mw-utils")
+  call dein#add("tomtom/tlib_vim")
+  call dein#add("honza/vim-snippets")
+  call dein#add('garbas/vim-snipmate')
+
+  call dein#add('vim-ruby/vim-ruby')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('jistr/vim-nerdtree-tabs')
+
+  call dein#add('airblade/vim-gitgutter')
+
+  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('tomtom/tcomment_vim')
+  call dein#add('tpope/vim-endwise')
+  call dein#add('ervandew/supertab')
+
+  " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('jpo/vim-railscasts-theme')
+  call dein#add('jtratner/vim-flavored-markdown')
+  call dein#add('slim-template/vim-slim')
+  call dein#add('kchmck/vim-coffee-script')
+  call dein#add('isRuslan/vim-es6')
+
+  call dein#add('tpope/vim-fugitive')
+
+  call dein#add('tpope/vim-rails')
+  call dein#add('tpope/vim-bundler')
+
+  call dein#add('Shougo/neocomplete.vim')
+  call dein#add('osyo-manga/vim-monster')
+  call dein#add('Konfekt/FastFold')
+
+  call dein#add('elixir-lang/vim-elixir')
+
+  call dein#add('wakatime/vim-wakatime')
+
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
 
 " Open new tab only if it doesn't exists,
 " otherwise switch to the already open tab
@@ -44,66 +101,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " function NERDTreeMyOpenInTab(node)
 "   call a:node.open({'reuse': "all", 'where': 't'})
 " endfunction
-
-" Dependencies of snipmate
-NeoBundle "MarcWeber/vim-addon-mw-utils"
-NeoBundle "tomtom/tlib_vim"
-NeoBundle "honza/vim-snippets"
-NeoBundle 'garbas/vim-snipmate'
-
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Xuyuanp/nerdtree-git-plugin'
-NeoBundle 'jistr/vim-nerdtree-tabs'
-
-NeoBundle 'airblade/vim-gitgutter'
-
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'ervandew/supertab'
-
-" http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
-NeoBundle 'vim-airline/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'jpo/vim-railscasts-theme'
-NeoBundle 'jtratner/vim-flavored-markdown'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'isRuslan/vim-es6'
-
-NeoBundle 'tpope/vim-fugitive'
-
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
-
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'osyo-manga/vim-monster'
-NeoBundle 'Konfekt/FastFold'
-
-NeoBundle 'elixir-lang/vim-elixir'
-
-NeoBundle 'wakatime/vim-wakatime'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-syntax on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
 
 set cursorline                           "underline the current line in the file
 set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
