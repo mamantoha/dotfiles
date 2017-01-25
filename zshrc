@@ -107,8 +107,9 @@ alias wttr='curl http://wttr.in/Lviv '
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
+export PATH=/usr/local/bin:$PATH
+
 # export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=$HOME/bin:$PATH
 
-export PATH=/usr/local/bin:$PATH
