@@ -24,6 +24,8 @@ endif
 set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
 " Required:
+" curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+" sh installer.sh ~/.vim/bundles
 if dein#load_state('~/.vim/bundles')
   call dein#begin('~/.vim/bundles')
 
@@ -41,6 +43,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('tomtom/tcomment_vim')
   call dein#add('tpope/vim-endwise')
+  call dein#add('ervandew/supertab')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
@@ -184,8 +187,6 @@ set iminsert=0
 set imsearch=0
 
 " Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-
 let g:neocomplete#sources#omni#input_patterns = {
 \   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
 \}
