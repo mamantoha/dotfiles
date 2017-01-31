@@ -30,7 +30,7 @@ yaourt -S powerline
 
 * [rbenv](https://github.com/rbenv/rbenv)
 
-* [neobundle.vim](https://github.com/Shougo/neobundle.vim)
+* [dein.vim](https://github.com/Shougo/dein.vim)
 
 ### rbenv plugins:
 
