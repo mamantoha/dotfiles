@@ -109,7 +109,6 @@ alias wttr='curl http://wttr.in/Lviv '
 
 export PATH=/usr/local/bin:$PATH
 
-# export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=$HOME/bin:$PATH
 
