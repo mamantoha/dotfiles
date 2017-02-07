@@ -64,6 +64,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('osyo-manga/vim-monster')
 
   call dein#add('wakatime/vim-wakatime')
+  call dein#add('tmux-plugins/vim-tmux')
 
 
   " Required:
