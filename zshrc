@@ -97,6 +97,16 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+man() {
+  LESS_TERMCAP_md=$'\e[01;31m' \
+  LESS_TERMCAP_me=$'\e[0m' \
+  LESS_TERMCAP_se=$'\e[0m' \
+  LESS_TERMCAP_so=$'\e[01;44;33m' \
+  LESS_TERMCAP_ue=$'\e[0m' \
+  LESS_TERMCAP_us=$'\e[01;32m' \
+  command man "$@"
+}
+
 alias grep='grep --color=auto'
 
 alias wttr='curl http://wttr.in/Lviv '
