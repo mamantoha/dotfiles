@@ -109,7 +109,7 @@ man() {
 
 alias grep='grep --color=auto'
 
-alias wttr='curl http://wttr.in/Lviv '
+alias wttr='curl -H "Accept-Language: uk" http://wttr.in/Lviv'
 
 # source /usr/share/doc/pkgfile/command-not-found.zsh
 
