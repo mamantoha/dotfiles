@@ -54,6 +54,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('isRuslan/vim-es6')
   call dein#add('elixir-lang/vim-elixir')
+  call dein#add('posva/vim-vue')
 
 
   call dein#add('vim-ruby/vim-ruby')
