@@ -176,6 +176,8 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+" Automatically removing all trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
 
 set number " Show line numbers
 
