@@ -55,6 +55,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('isRuslan/vim-es6')
   call dein#add('elixir-lang/vim-elixir')
   call dein#add('posva/vim-vue')
+  call dein#add('rhysd/vim-crystal')
 
 
   call dein#add('vim-ruby/vim-ruby')
@@ -66,7 +67,6 @@ if dein#load_state('~/.vim/bundles')
 
   call dein#add('wakatime/vim-wakatime')
   call dein#add('tmux-plugins/vim-tmux')
-
 
   " Required:
   call dein#end()
