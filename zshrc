@@ -113,6 +113,8 @@ alias wttr='curl -H "Accept-Language: uk" http://wttr.in/Lviv'
 
 # source /usr/share/doc/pkgfile/command-not-found.zsh
 
+source /etc/zsh_command_not_found
+
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
