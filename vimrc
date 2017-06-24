@@ -183,8 +183,6 @@ set number " Show line numbers
 
 nmap <Space> <PageDown>
 
-" Ukrainian support | CTRL+^
-set keymap=ukrainian-jcuken
 " by default - latin keymap
 set iminsert=0
 " by default - latin keymap for search
