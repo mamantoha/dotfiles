@@ -1,6 +1,10 @@
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
+" You need to have Vim with the clipboard and xtermclipboard features compiled
+" in. In Ubuntu, these are only available with the vim GUI packages
+" (vim-gnome, vim-gtk, vim-athena, etc.).
+"
 " `"+y` - copy for X clipboard
 " `"+p` - paste from + after the cursor
 
