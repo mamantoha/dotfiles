@@ -124,3 +124,18 @@ export PATH=/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 export PATH=$HOME/bin:$PATH
 
+OS=`uname -a`
+
+if [[ "$OS" =~ "Darvin" ]]; then
+  PATH=$PATH:/usr/local/sbin
+  export PATH=$HOME/Library/Python/2.7/bin:$PATH
+
+  export LC_ALL=en_US.UTF-8
+  export LANG=en_US.UTF-8
+elif [[ "$OS" =~ "Linux" ]]; then
+  if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+  fi
+else
+  # Unknown
+fi
