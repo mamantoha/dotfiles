@@ -124,9 +124,9 @@ export PATH=$HOME/bin:$PATH
 
 OS=`uname -a`
 
-if [[ "$OS" =~ "Darvin" ]]; then
+if [[ "$OS" =~ "Darwin" ]]; then
   PATH=$PATH:/usr/local/sbin
-  export PATH=$HOME/Library/Python/2.7/bin:$PATH
+  PATH=$HOME/Library/Python/2.7/bin:$PATH
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
