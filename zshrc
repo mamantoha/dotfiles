@@ -138,3 +138,6 @@ elif [[ "$OS" =~ "Linux" ]]; then
 else
   # Unknown
 fi
+
+export DEBFULLNAME="Anton Maminov"
+export DEBEMAIL="anton.linux@gmail.com"
