@@ -42,8 +42,9 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('tpope/vim-rails')
   call dein#add('tpope/vim-bundler')
 
-  call dein#add('Shougo/neocomplete')
-  call dein#add('osyo-manga/vim-monster')
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('Shougo/deoplete-rct')
+  call dein#add('fishbullet/deoplete-ruby')
 
   call dein#add('wakatime/vim-wakatime')
   call dein#add('tmux-plugins/vim-tmux')
@@ -161,7 +162,5 @@ set iminsert=0
 " by default - latin keymap for search
 set imsearch=0
 
-" Use neocomplete.
-let g:neocomplete#sources#omni#input_patterns = {
-\   "ruby" : '[^. *\t]\.\w*\|\h\w*::',
-\}
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
