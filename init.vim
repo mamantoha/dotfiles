@@ -155,6 +155,9 @@ autocmd BufWritePre * %s/\s\+$//e
 
 set number " Show line numbers
 
+" non-blinking cursor
+set guicursor=blinkon0
+
 nmap <Space> <PageDown>
 
 " by default - latin keymap
