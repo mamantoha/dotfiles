@@ -156,7 +156,7 @@ autocmd BufWritePre * %s/\s\+$//e
 set number " Show line numbers
 
 " non-blinking cursor
-set guicursor=blinkon0
+set guicursor=
 
 nmap <Space> <PageDown>
 
@@ -166,4 +166,4 @@ set iminsert=0
 set imsearch=0
 
 " Use deoplete.
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
