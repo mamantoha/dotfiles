@@ -130,6 +130,7 @@ if [[ "$OS" =~ "Darwin" ]]; then
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
+  export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 elif [[ "$OS" =~ "Linux" ]]; then
   source /etc/zsh_command_not_found
   if [ -d "$HOME/.local/bin" ]; then
