@@ -90,7 +90,12 @@ setopt nobeep
 
 zstyle ':completion:*' insert-tab false
 
-export VISUAL="vim"
+# Use Neovim as "preferred editor"
+export VISUAL="nvim"
+
+# Use Neovim instead of Vim or Vi
+alias vim=nvim
+alias vi=nvim
 
 # some more ls aliases
 alias ll='ls -alF'
