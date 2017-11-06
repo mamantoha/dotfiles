@@ -30,7 +30,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('jpo/vim-railscasts-theme')
 
-  call dein#add('jtratner/vim-flavored-markdown')
+  call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('isRuslan/vim-es6')
@@ -85,12 +85,6 @@ let g:airline_symbols.linenr = ''
 
 " open NERDTree on vim startup
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
-
-" highlight using Github Flavored Markdown
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
 
 set fileencodings=utf-8,cp1251,cp866,koi8-u
 set encoding=utf-8
