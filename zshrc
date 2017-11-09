@@ -123,9 +123,10 @@ alias wttr='curl -H "Accept-Language: uk" http://wttr.in/Lviv'
 # eval "$(pyenv init -)"
 
 export PATH=/usr/local/bin:$PATH
-
-eval "$(rbenv init -)"
 export PATH=$HOME/bin:$PATH
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 OS=`uname -a`
 

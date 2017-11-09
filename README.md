@@ -16,6 +16,13 @@ Making Zsh a default shell:
 chsh -s /bin/zsh
 ```
 
+Install rbenv:
+
+Clone rbenv into `~/.rbenv`:
+
+```
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
 
 Installing additional packages:
 
