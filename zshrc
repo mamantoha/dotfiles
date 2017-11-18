@@ -142,6 +142,10 @@ elif [[ "$OS" =~ "Linux" ]]; then
   if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
   fi
+  if [ -d "/snap/bin" ]; then
+    PATH="/snap/bin:$PATH"
+  fi
+
 else
   # Unknown
 fi
