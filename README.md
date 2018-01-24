@@ -99,3 +99,9 @@ git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/
 ```
 
 Specify gems in `$(rbenv root)/default-gems` by name, one per line
+
+### Other
+
+#### Visual Studio Code
+
+`~/.config/Code/User/settings.json`
