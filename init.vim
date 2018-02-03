@@ -42,6 +42,8 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('tpope/vim-rails')
   call dein#add('tpope/vim-bundler')
 
+  call dein#add('neomake/neomake')
+
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/deoplete-rct')
   call dein#add('fishbullet/deoplete-ruby')
@@ -161,3 +163,15 @@ set imsearch=0
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 0
+
+" Run NeoMake on read and write operations
+autocmd! BufReadPost,BufWritePost * Neomake
+
+" Disable inherited syntastic
+let g:syntastic_mode_map = {
+  \ "mode": "passive",
+  \ "active_filetypes": [],
+  \ "passive_filetypes": [] }
+
+let g:neomake_serialize = 1
+let g:neomake_serialize_abort_on_error = 1
