@@ -47,6 +47,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/deoplete-rct')
   call dein#add('fishbullet/deoplete-ruby')
+  call dein#add('yoru/deoplete-crystal')
 
   call dein#add('wakatime/vim-wakatime')
   call dein#add('tmux-plugins/vim-tmux')
@@ -162,7 +163,11 @@ set iminsert=0
 set imsearch=0
 
 " Use deoplete.
-let g:deoplete#enable_at_startup = 0
+let g:deoplete#enable_at_startup = 1
+
+" https://github.com/yoru/deoplete-crystal
+let g:deoplete#sources#crystal#bin = '/usr/local/bin/cracker'
+let g:deoplete#sources#crystal#lib = '/usr/share/crystal'
 
 " Run NeoMake on read and write operations
 autocmd! BufReadPost,BufWritePost * Neomake
