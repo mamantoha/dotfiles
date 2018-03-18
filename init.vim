@@ -32,6 +32,7 @@ if dein#load_state('~/.config/nvim/bundles')
 
   call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
+  call dein#add('isaacsloan/vim-slang')
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('isRuslan/vim-es6')
   call dein#add('elixir-lang/vim-elixir')
