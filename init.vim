@@ -105,7 +105,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme railscasts
 
 " Specify background color
-highlight Normal ctermbg=none
+highlight Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=2                         "number of spaces to use in each autoindent step
 set tabstop=2                            "two tab spaces
