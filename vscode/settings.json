@@ -4,4 +4,5 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "workbench.editor.enablePreview": false,
+  "window.menuBarVisibility": "toggle",
 }
