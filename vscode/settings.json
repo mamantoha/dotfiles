@@ -5,4 +5,9 @@
   "files.trimFinalNewlines": true,
   "workbench.editor.enablePreview": false,
   "window.menuBarVisibility": "toggle",
+  "workbench.colorCustomizations": {
+    "statusBar.background" : "#333333",
+    "statusBar.noFolderBackground" : "#333333",
+    "statusBar.debuggingBackground": "#511f1f"
+}
 }
