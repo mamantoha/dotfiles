@@ -9,5 +9,6 @@
     "statusBar.background" : "#333333",
     "statusBar.noFolderBackground" : "#333333",
     "statusBar.debuggingBackground": "#511f1f"
-}
+},
+"editor.scrollBeyondLastLine": false
 }
