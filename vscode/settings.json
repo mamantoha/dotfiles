@@ -10,5 +10,9 @@
     "statusBar.noFolderBackground" : "#333333",
     "statusBar.debuggingBackground": "#511f1f"
 },
-"editor.scrollBeyondLastLine": false
+"editor.scrollBeyondLastLine": false,
+"gitlens.advanced.messages": {
+  "suppressShowKeyBindingsNotice": true
+},
+"workbench.editor.labelFormat": "medium"
 }
