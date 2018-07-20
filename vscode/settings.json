@@ -8,11 +8,12 @@
   "workbench.colorCustomizations": {
     "statusBar.background" : "#333333",
     "statusBar.noFolderBackground" : "#333333",
-    "statusBar.debuggingBackground": "#511f1f"
+    "statusBar.debuggingBackground": "#511f1f",
 },
-"editor.scrollBeyondLastLine": false,
-"gitlens.advanced.messages": {
-  "suppressShowKeyBindingsNotice": true
-},
-"workbench.editor.labelFormat": "medium"
+  "editor.scrollBeyondLastLine": false,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "workbench.editor.labelFormat": "default",
+  "workbench.colorTheme": "Default Dark+",
 }
