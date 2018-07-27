@@ -125,8 +125,8 @@ alias wttr='curl -H "Accept-Language: uk" http://wttr.in/Lviv'
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 
 OS=`uname -a`
 

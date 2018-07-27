@@ -16,12 +16,15 @@ Making Zsh a default shell:
 chsh -s /bin/zsh
 ```
 
-Install rbenv:
-
-Clone rbenv into `~/.rbenv`:
+Install [anyenv](https://github.com/riywo/anyenv):
 
 ```
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/riywo/anyenv ~/.anyenv
+```
+
+```
+mkdir -p $(anyenv root)/plugins
+git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 ```
 
 Installing additional packages:
@@ -35,12 +38,6 @@ yaourt -S powerline
 
 ```
 sudo apt install build-essential git tmux zsh powerline
-```
-
-#### rbenv
-
-```
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
 #### Neovim
@@ -67,38 +64,7 @@ Restarting X for the changes to take effect.
 ## Additional Packages:
 
 * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-* [rbenv](https://github.com/rbenv/rbenv)
-
 * [dein.vim](https://github.com/Shougo/dein.vim)
-
-### rbenv plugins:
-
-#### ruby-build
-
-```
-git clone https://github.com/rbenv/ruby-build.git $(rbenv root)/plugins/ruby-build
-```
-
-#### rbenv-vars
-
-```
-git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars
-```
-
-#### rbenv-update
-
-```
-git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update
-```
-
-#### rbenv-default-gems
-
-```
-git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
-```
-
-Specify gems in `$(rbenv root)/default-gems` by name, one per line
 
 ### Other
 
