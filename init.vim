@@ -165,6 +165,7 @@ set imsearch=0
 
 " Use deoplete call deoplete#enable().
 let g:deoplete#enable_at_startup = 0
+nnoremap <leader>d :call deoplete#toggle()<CR>
 
 " https://github.com/yoru/deoplete-crystal
 let g:deoplete#sources#crystal#bin = '/usr/local/bin/cracker'
