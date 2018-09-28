@@ -48,7 +48,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/deoplete-rct')
   call dein#add('fishbullet/deoplete-ruby')
-  call dein#add('yoru/deoplete-crystal')
+  call dein#add('HarrisonB/deoplete-crystal')
 
   call dein#add('wakatime/vim-wakatime')
   call dein#add('tmux-plugins/vim-tmux')
@@ -163,8 +163,8 @@ set iminsert=0
 " by default - latin keymap for search
 set imsearch=0
 
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
+" Use deoplete call deoplete#enable().
+let g:deoplete#enable_at_startup = 0
 
 " https://github.com/yoru/deoplete-crystal
 let g:deoplete#sources#crystal#bin = '/usr/local/bin/cracker'
