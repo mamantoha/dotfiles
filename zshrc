@@ -151,3 +151,5 @@ fi
 
 export DEBFULLNAME="Anton Maminov"
 export DEBEMAIL="anton.linux@gmail.com"
+
+eval $(thefuck --alias)
