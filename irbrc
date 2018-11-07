@@ -29,3 +29,20 @@ IRB.conf[:PROMPT][:MY_PROMPT] = { # name of prompt mode
 }
 
 IRB.conf[:PROMPT_MODE] = :MY_PROMPT
+
+# Use Pry everywhere
+if defined?(::Bundler)
+  global_gemset = `rbenv exec gem environment | grep '\\- INSTALLATION' | cut -d : -f 2 | xargs`.chomp
+  if global_gemset
+    all_global_gem_paths = Dir.glob("#{global_gemset}/gems/*")
+    all_global_gem_paths.each do |p|
+      gem_path = "#{p}/lib"
+      if gem_path =~ /(pry|method_source|coderay|slop)-\d+\.\d+\.\d+/
+        $LOAD_PATH << gem_path
+      end
+    end
+  end
+end
+require 'pry'
+Pry.start
+exit
