@@ -38,6 +38,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('elixir-lang/vim-elixir')
   call dein#add('posva/vim-vue')
   call dein#add('rhysd/vim-crystal')
+  call dein#add('peterhoeg/vim-qml')
 
   call dein#add('vim-ruby/vim-ruby')
   call dein#add('tpope/vim-rails')
