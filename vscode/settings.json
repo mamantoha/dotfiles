@@ -4,7 +4,6 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "workbench.editor.enablePreview": false,
-  "window.menuBarVisibility": "toggle",
   "workbench.colorCustomizations": {
     "statusBar.background" : "#333333",
     "statusBar.noFolderBackground" : "#333333",
@@ -16,4 +15,5 @@
   },
   "workbench.editor.labelFormat": "default",
   "workbench.colorTheme": "Default Dark+",
+  "window.titleBarStyle": "custom",
 }
