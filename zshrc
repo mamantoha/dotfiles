@@ -50,7 +50,7 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler rake ruby rails archlinux tmux systemd sudo rbenv command-not-found)
+plugins=(sudo command-not-found)
 
 # User configuration
 
