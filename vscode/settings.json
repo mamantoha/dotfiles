@@ -15,8 +15,8 @@
   },
   "workbench.editor.labelFormat": "default",
   "workbench.colorTheme": "Default Dark+",
-  "window.titleBarStyle": "custom",
   "workbench.statusBar.feedback.visible": false,
   "workbench.tree.indent": 20,
   "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom",
 }
