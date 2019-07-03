@@ -152,9 +152,9 @@ fi
 export DEBFULLNAME="Anton Maminov"
 export DEBEMAIL="anton.linux@gmail.com"
 
+# Add to "$HOME/.zprofile"
 # export GOOGLE_API_KEY=
 # export GOOGLE_DEFAULT_CLIENT_ID=
 # export GOOGLE_DEFAULT_CLIENT_SECRET=
-source ~/.google_api_key
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
