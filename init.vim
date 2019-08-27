@@ -3,6 +3,10 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+" Copy/paste to clipboard
+" "*y
+" "*p
+
 " Required:
 set runtimepath+=~/.config/nvim/bundles/repos/github.com/Shougo/dein.vim
 
