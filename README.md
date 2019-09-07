@@ -36,7 +36,7 @@ yaourt -S powerline
 
 ### Ubuntu
 
-```
+```console
 sudo apt install build-essential git tmux zsh powerline
 ```
 
