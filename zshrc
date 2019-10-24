@@ -121,12 +121,6 @@ alias grep='grep --color=auto'
 
 alias wttr='curl -H "Accept-Language: uk" http://v2.wttr.in'
 
-# source /usr/share/doc/pkgfile/command-not-found.zsh
-
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
