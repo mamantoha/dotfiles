@@ -55,6 +55,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('Shougo/deoplete-rct')
   call dein#add('fishbullet/deoplete-ruby')
   call dein#add('HarrisonB/deoplete-crystal')
+  call dein#add('vim-scripts/LargeFile')
 
   call dein#add('wakatime/vim-wakatime')
   call dein#add('tmux-plugins/vim-tmux')
@@ -188,3 +189,5 @@ let g:syntastic_mode_map = {
 
 let g:neomake_serialize = 1
 let g:neomake_serialize_abort_on_error = 1
+
+let g:LargeFile = 5
