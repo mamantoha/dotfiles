@@ -19,4 +19,6 @@
   "workbench.tree.indent": 20,
   "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
+  "window.openFoldersInNewWindow": "on",
+  "window.newWindowDimensions": "maximized",
 }
