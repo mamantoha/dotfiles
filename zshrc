@@ -119,7 +119,8 @@ man() {
 
 alias grep='grep --color=auto'
 
-alias wttr='curl -H "Accept-Language: uk" http://v2.wttr.in'
+alias wttr='curl -H "Accept-Language: uk" http://wttr.in'
+alias wttr2='curl -H "Accept-Language: uk" http://v2.wttr.in'
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
