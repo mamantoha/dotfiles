@@ -4,8 +4,9 @@ if &compatible
 endif
 
 " Copy/paste to clipboard
-" "*y
-" "*p
+" *y
+" *p
+set clipboard=unnamedplus
 
 " Required:
 set runtimepath+=~/.config/nvim/bundles/repos/github.com/Shougo/dein.vim
