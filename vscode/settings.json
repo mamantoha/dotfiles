@@ -22,4 +22,5 @@
   "window.titleBarStyle": "custom",
   "window.openFoldersInNewWindow": "on",
   "window.newWindowDimensions": "maximized",
+  "editor.fontFamily": "'JetBrains Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
 }
