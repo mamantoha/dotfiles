@@ -93,6 +93,9 @@ setopt noincappendhistory
 setopt nosharehistory
 setopt nobeep
 
+# When searching for history, do not display duplicates of a line previously found
+setopt HIST_FIND_NO_DUPS
+
 zstyle ':completion:*' insert-tab false
 
 if type nvim > /dev/null 2>&1; then
