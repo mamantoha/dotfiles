@@ -86,7 +86,7 @@ endif
 set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'base16_railscasts'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
