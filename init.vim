@@ -38,7 +38,7 @@ if dein#load_state('~/.config/nvim/bundles')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('jpo/vim-railscasts-theme')
+  call dein#add('dhruvasagar/vim-railscasts-theme')
 
   call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
@@ -123,9 +123,6 @@ set lazyredraw
 
 set termguicolors
 
-" set Vim-specific sequences for RGB colors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme railscasts
 
 " Specify background color
