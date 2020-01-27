@@ -3,6 +3,9 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+" Remap leader to comma
+let mapleader = ","
+
 " Copy/paste to clipboard
 " *y
 " *p
@@ -19,14 +22,16 @@ if dein#load_state('~/.config/nvim/bundles')
   " Required:
   call dein#add('~/.config/nvim/bundles/repos/github.com/Shougo/dein.vim')
 
-  call dein#add('scrooloose/nerdtree')
+  call dein#add('preservim/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('jistr/vim-nerdtree-tabs')
 
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-fugitive')
 
-  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
+
   call dein#add('tomtom/tcomment_vim')
   call dein#add('tpope/vim-endwise')
   call dein#add('ervandew/supertab')
@@ -95,8 +100,19 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-" open NERDTree on vim startup
+" Fzf search
+silent! nmap <C-P> :GFiles<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
+nmap <Leader>f :Ag<Space><CR>
+
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+" buffers
+map bn :bn<cr>
+map bp :bp<cr>
+map bd :bd<cr>
 
 set fileencodings=utf-8,cp1251,cp866,koi8-u
 set encoding=utf-8
@@ -141,9 +157,6 @@ vnoremap > >gv
 
 " Force saving files that require root permission
 cmap w!! %!sudo tee > /dev/null %
-
-" Remap leader to comma
-let mapleader = ","
 
 " Clear search highlights
 noremap <silent><Leader>/ :nohls<CR>
