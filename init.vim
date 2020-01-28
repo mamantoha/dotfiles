@@ -11,6 +11,8 @@ let mapleader = ","
 " *p
 set clipboard=unnamedplus
 
+set mouse=a
+
 " Required:
 set runtimepath+=~/.config/nvim/bundles/repos/github.com/Shougo/dein.vim
 
