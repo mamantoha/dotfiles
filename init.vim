@@ -39,6 +39,7 @@ if dein#load_state('~/.config/nvim/bundles')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('dhruvasagar/vim-railscasts-theme')
+  call dein#add('ryanoasis/vim-devicons')
 
   call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
