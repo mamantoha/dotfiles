@@ -184,6 +184,9 @@ set iminsert=0
 " by default - latin keymap for search
 set imsearch=0
 
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr'] = ''
+
 " Use deoplete call deoplete#enable().
 let g:deoplete#enable_at_startup = 0
 nnoremap <leader>d :call deoplete#toggle()<CR>
