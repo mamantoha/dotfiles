@@ -157,7 +157,7 @@ fi
 export DEBFULLNAME="Anton Maminov"
 export DEBEMAIL="anton.linux@gmail.com"
 
-export KSCREEN_LOGGING=false
+export KSCREEN_LOGGING=0
 
 # Add to "$HOME/.zprofile"
 # export GOOGLE_API_KEY=
