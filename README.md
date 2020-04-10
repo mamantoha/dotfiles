@@ -24,6 +24,20 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 * `Ctrl+T` to search for files
 * `Ctrl+R` to search for commands in a history
 
+#### Vim
+
+```
+mkdir -p .vim/bundles
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.vim/bundles
+```
+
+Open vim and install dein
+
+```
+:call dein#install()
+```
+
 #### Neovim
 
 ```
