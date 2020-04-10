@@ -15,7 +15,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "workbench.editor.labelFormat": "default",
-  "workbench.colorTheme": "Default Dark+",
   "workbench.statusBar.feedback.visible": false,
   "workbench.tree.indent": 20,
   "window.zoomLevel": 0,
