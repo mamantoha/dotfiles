@@ -40,7 +40,7 @@ if dein#load_state('~/.config/nvim/bundles')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('dhruvasagar/vim-railscasts-theme')
+  call dein#add('dracula/vim')
   call dein#add('ryanoasis/vim-devicons')
 
   call dein#add('tpope/vim-markdown')
@@ -85,11 +85,9 @@ endif
 
 "End dein Scripts-------------------------
 "
-"set cursorline                           "underline the current line in the file
 set cursorcolumn                         "highlight the current column. Visible in GUI mode only.
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'base16_railscasts'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
@@ -125,11 +123,13 @@ set laststatus=2
 set lazyredraw
 
 set termguicolors
-
-colorscheme railscasts
+set t_Co=256
+set t_ut=
+let g:dracula_italic = 0
+colorscheme dracula
 
 " Specify background color
-highlight Normal guibg=NONE ctermbg=NONE
+" highlight Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=2                         "number of spaces to use in each autoindent step
 set tabstop=2                            "two tab spaces
