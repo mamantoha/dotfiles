@@ -2,38 +2,6 @@
 
 ## Requirements
 
-### ArchLinux:
-
-Install Zsh:
-
-```
-yaourt -S zsh zsh-completions
-```
-
-Making Zsh a default shell:
-
-```
-chsh -s /bin/zsh
-```
-
-Install [anyenv](https://github.com/riywo/anyenv):
-
-```
-git clone https://github.com/riywo/anyenv ~/.anyenv
-```
-
-```
-mkdir -p $(anyenv root)/plugins
-git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
-```
-
-Installing additional packages:
-
-```
-yaourt -S vim tmux git
-yaourt -S powerline
-```
-
 ### Ubuntu
 
 ```console
