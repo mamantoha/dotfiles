@@ -15,6 +15,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+#### Dracula theme
+
+```
+git clone https://github.com/dracula/zsh.git
+cp zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/
+cp zsh/lib ~/.oh-my-zsh/themes/
+```
 ### fzf
 
 ```console
