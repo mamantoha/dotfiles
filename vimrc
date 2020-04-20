@@ -124,7 +124,6 @@ set lazyredraw
 
 set t_Co=256
 set t_ut=
-let g:dracula_italic = 0
 colorscheme dracula
 
 set shiftwidth=2                         "number of spaces to use in each autoindent step

@@ -124,8 +124,12 @@ man() {
 
 alias grep='grep --color=auto'
 
+alias tmux='env TERM=screen-256color tmux'
+
 alias wttr='curl -H "Accept-Language: uk" http://wttr.in'
 alias wttr2='curl -H "Accept-Language: uk" http://v2.wttr.in'
+
+export TERM="xterm-256color"
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
