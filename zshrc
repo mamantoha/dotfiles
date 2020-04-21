@@ -111,6 +111,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ip='ip --color=auto'
+alias ncmpc='ncmpc --no-colors'
 
 man() {
   LESS_TERMCAP_md=$'\e[01;31m' \
