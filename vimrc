@@ -9,7 +9,7 @@ let mapleader = ","
 " Copy/paste to clipboard
 " *y
 " *p
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 set mouse=a
 
