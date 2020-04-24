@@ -146,6 +146,9 @@ set nofoldenable
 
 set noswapfile
 
+set autoread
+au CursorHold,CursorHoldI * checktime
+
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
