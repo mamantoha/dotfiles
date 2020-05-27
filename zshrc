@@ -127,8 +127,13 @@ alias grep='grep --color=auto'
 
 alias tmux='env TERM=screen-256color tmux'
 
-alias wttr='curl -H "Accept-Language: uk" http://wttr.in'
-alias wttr2='curl -H "Accept-Language: uk" http://v2.wttr.in'
+wttr() {
+  curl -H "Accept-Language: uk" https://wttr.in/$1
+}
+
+wttr2() {
+  curl -H "Accept-Language: uk" https://v2.wttr.in/$1
+}
 
 export TERM="xterm-256color"
 
