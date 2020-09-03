@@ -26,7 +26,7 @@ if dein#load_state('~/.vim/bundles')
 
   " Let dein manage dein
   " Required:
-  call dein#add('~/.config/nvim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
   call dein#add('preservim/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
