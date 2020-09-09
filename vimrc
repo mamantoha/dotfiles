@@ -41,6 +41,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('tomtom/tcomment_vim')
   call dein#add('tpope/vim-endwise')
   call dein#add('ervandew/supertab')
+  call dein#add('jiangmiao/auto-pairs')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
