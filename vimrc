@@ -12,6 +12,8 @@ let mapleader = ","
 if has('macunix')
   set clipboard=unnamed
 elseif has('unix')
+  " vim --version | grep clip
+  " sudo apt install vim-gtk
   set clipboard=unnamedplus
 end
 
