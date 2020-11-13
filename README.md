@@ -5,7 +5,7 @@
 ### Ubuntu
 
 ```console
-sudo apt install build-essential git tmux zsh powerline
+sudo apt install build-essential git tmux zsh powerline vim-gtk3
 ```
 
 ### Oh My Zsh
