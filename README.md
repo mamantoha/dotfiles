@@ -20,7 +20,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 git clone https://github.com/dracula/zsh.git
 cp zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/
-cp zsh/lib ~/.oh-my-zsh/themes/
+cp -r zsh/lib ~/.oh-my-zsh/themes/
 ```
 ### fzf
 
@@ -52,17 +52,7 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 sh ./installer.sh ~/.config/nvim/bundles
 ```
 
-#### Powerline
-
-http://powerline.readthedocs.io/en/latest/installation/linux.html?highlight=fonts#fonts-installation
-
-```
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-mv PowerlineSymbols.otf ~/.local/share/fonts/
-fc-cache -vf ~/.local/share/fonts/
-mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-```
+#### Fonts
 
 ```
 echo -e "\e[1mbold\e[0m"
