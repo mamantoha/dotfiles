@@ -8,9 +8,19 @@
 sudo apt install build-essential git tmux zsh powerline vim-gtk3
 ```
 
+### macOS
+
+```console
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install tmux anyenv python the_silver_searcher
+pip3 install --user powerline-status
+```
+
 ### Oh My Zsh
 
 ```console
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
@@ -39,12 +49,6 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 sh ./installer.sh ~/.vim/bundles
 ```
 
-Open vim and install dein
-
-```
-:call dein#install()
-```
-
 #### Neovim
 
 ```
@@ -61,15 +65,7 @@ echo -e "\e[4munderline\e[0m"
 echo -e "\e[9mstrikethrough\e[0m"
 ```
 
-Restarting X for the changes to take effect.
-
 ## Additional Packages:
 
 * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [dein.vim](https://github.com/Shougo/dein.vim)
-
-### Other
-
-#### Visual Studio Code
-
-`~/.config/Code/User/settings.json`
