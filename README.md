@@ -5,7 +5,8 @@
 ### Ubuntu
 
 ```console
-sudo apt install build-essential git tmux zsh powerline vim-gtk3
+sudo apt install build-essential git tmux zsh powerline vim-gtk3 silversearcher-ag
+chsh -s $(which zsh)
 ```
 
 ### macOS
@@ -44,7 +45,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 #### Vim
 
 ```
-mkdir -p .vim/bundles
+mkdir -p ~/.vim/bundles
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.vim/bundles
 ```
