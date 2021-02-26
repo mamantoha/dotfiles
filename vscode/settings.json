@@ -35,5 +35,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontLigatures": false
+  "editor.fontLigatures": false,
+  "editor.fontSize": 13,
+  "todo-tree.tree.showScanModeButton": false,
+  "cmake.configureOnOpen": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true
 }
