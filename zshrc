@@ -147,7 +147,7 @@ OS=`uname -a`
 
 if [[ "$OS" =~ "Darwin" ]]; then
   PATH=$PATH:/usr/local/sbin
-  PATH=$HOME/Library/Python/2.7/bin:$PATH
+  PATH=$HOME/Library/Python/3.9/bin:$PATH
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
