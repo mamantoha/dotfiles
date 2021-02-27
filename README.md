@@ -33,6 +33,7 @@ git clone https://github.com/dracula/zsh.git
 cp zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/
 cp -r zsh/lib ~/.oh-my-zsh/themes/
 ```
+
 ### fzf
 
 ```console
@@ -41,6 +42,16 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 
 * `Ctrl+T` to search for files
 * `Ctrl+R` to search for commands in a history
+
+#### tmux
+
+```console
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+* `prefix` + `r` - reload config
+* `prefix` + `I` - install plugins
+* `prefix` + `U` - update plugins
 
 #### Vim
 
