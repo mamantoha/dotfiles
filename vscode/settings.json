@@ -41,5 +41,6 @@
   "cmake.configureOnOpen": false,
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.badges": true,
-  "workbench.editor.decorations.colors": true
+  "workbench.editor.decorations.colors": true,
+  "telemetry.enableTelemetry": false
 }
