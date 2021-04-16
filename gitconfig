@@ -3,6 +3,7 @@
 	email = anton.linux@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [diff]
