@@ -57,7 +57,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('isRuslan/vim-es6')
   call dein#add('elixir-lang/vim-elixir')
   call dein#add('posva/vim-vue')
-  call dein#add('rhysd/vim-crystal')
+  call dein#add('vim-crystal/vim-crystal')
   call dein#add('peterhoeg/vim-qml')
   call dein#add('mtdl9/vim-log-highlighting')
   call dein#add('dart-lang/dart-vim-plugin')
@@ -68,10 +68,6 @@ if dein#load_state('~/.vim/bundles')
 
   call dein#add('neomake/neomake')
 
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('Shougo/deoplete-rct')
-  call dein#add('fishbullet/deoplete-ruby')
-  call dein#add('HarrisonB/deoplete-crystal')
   call dein#add('vim-scripts/LargeFile')
 
   call dein#add('wakatime/vim-wakatime')
@@ -192,14 +188,6 @@ set imsearch=0
 
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr'] = ''
-
-" Use deoplete call deoplete#enable().
-let g:deoplete#enable_at_startup = 0
-nnoremap <leader>d :call deoplete#toggle()<CR>
-
-" https://github.com/yoru/deoplete-crystal
-let g:deoplete#sources#crystal#bin = '/usr/local/bin/cracker'
-let g:deoplete#sources#crystal#lib = '/usr/share/crystal'
 
 " Run NeoMake on read and write operations
 autocmd! BufReadPost,BufWritePost * Neomake
