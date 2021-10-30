@@ -20,5 +20,8 @@
 	fix = commit --amend --no-edit
 	rrb = "!git reset --hard origin/$(git branch --show-current)"
 	default = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+	who = shortlog -ns --
 [pull]
 	rebase = false
+[init]
+  defaultBranch = main
