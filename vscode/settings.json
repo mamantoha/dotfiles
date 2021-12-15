@@ -17,7 +17,6 @@
   "workbench.editor.labelFormat": "default",
   "workbench.statusBar.feedback.visible": false,
   "workbench.tree.indent": 20,
-  "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
   "window.openFoldersInNewWindow": "on",
   "window.newWindowDimensions": "maximized",
@@ -36,7 +35,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontLigatures": false,
-  "editor.fontSize": 13,
   "todo-tree.tree.showScanModeButton": false,
   "cmake.configureOnOpen": false,
   "workbench.editor.wrapTabs": true,
