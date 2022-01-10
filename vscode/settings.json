@@ -34,7 +34,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "todo-tree.tree.showScanModeButton": false,
   "cmake.configureOnOpen": false,
   "workbench.editor.wrapTabs": true,
