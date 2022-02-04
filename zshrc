@@ -135,6 +135,10 @@ wttr2() {
   curl -H "Accept-Language: uk" https://v2.wttr.in/$1
 }
 
+rate.sx() {
+  curl -H "Accept-Language: uk" https://rate.sx/$1
+}
+
 export TERM="xterm-256color"
 
 export PATH=/usr/local/bin:$PATH
