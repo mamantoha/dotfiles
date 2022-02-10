@@ -7,13 +7,18 @@ endif
 let mapleader = ","
 
 " Copy/paste to clipboard
-" *y
-" *p
+" "*y
+" "*p
 if has('macunix')
   set clipboard=unnamed
+elseif exists('$WAYLAND_DISPLAY') && executable('wl-copy') && executable('wl-paste')
+  " install wl-clipboard
+  xnoremap "+y y:call system("wl-copy", @")<cr>
+  nnoremap "+p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
+  nnoremap "*p :let @"=substitute(system("wl-paste --no-newline --primary"), '<C-v><C-m>', '', 'g')<cr>p
 elseif has('unix')
   " vim --version | grep clip
-  " sudo apt install vim-gtk
+  " install vim-gtk
   set clipboard=unnamedplus
 end
 
