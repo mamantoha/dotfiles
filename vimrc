@@ -7,8 +7,8 @@ endif
 let mapleader = ","
 
 " Copy/paste to clipboard
-" "*y
-" "*p
+" "+y
+" "+p
 if has('macunix')
   set clipboard=unnamed
 elseif exists('$WAYLAND_DISPLAY') && executable('wl-copy') && executable('wl-paste')
