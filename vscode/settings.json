@@ -96,5 +96,6 @@
     "suburl",
     "upcase"
   ],
-  "crystal-lang.compiler": "/snap/bin/crystal"
+  "crystal-lang.compiler": "/snap/bin/crystal",
+  "editor.bracketPairColorization.enabled": true
 }
