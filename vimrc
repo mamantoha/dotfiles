@@ -36,7 +36,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
   call dein#add('preservim/nerdtree')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('xuyuanp/nerdtree-git-plugin')
   call dein#add('jistr/vim-nerdtree-tabs')
 
   call dein#add('airblade/vim-gitgutter')
@@ -51,7 +51,6 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('ervandew/supertab')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('wsdjeg/vim-fetch')
-  call dein#add('mg979/vim-visual-multi')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
