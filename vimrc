@@ -51,6 +51,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('ervandew/supertab')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('wsdjeg/vim-fetch')
+  call dein#add('mg979/vim-visual-multi')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
