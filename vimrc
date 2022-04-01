@@ -57,6 +57,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('dracula/vim')
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('luochen1990/rainbow')
+  call dein#add('bronson/vim-trailing-whitespace')
 
   call dein#add('preservim/vim-markdown')
   call dein#add('slim-template/vim-slim')
@@ -179,14 +180,6 @@ cmap w!! %!sudo tee > /dev/null %
 " Clear search highlights
 noremap <silent><Leader>/ :nohls<CR>
 
-" Show trailing whitespace and spaces before a tab:
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 " Automatically removing all trailing whitespace
 autocmd BufWritePre * %s/\s\+$//e
 
