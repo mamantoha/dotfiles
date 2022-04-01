@@ -45,7 +45,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
 
-  call dein#add('tomtom/tcomment_vim')
+  call dein#add('tpope/vim-commentary')
   call dein#add('tpope/vim-endwise')
   call dein#add('tpope/vim-surround')
   call dein#add('ervandew/supertab')
