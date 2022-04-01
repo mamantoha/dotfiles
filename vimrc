@@ -55,6 +55,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('dracula/vim')
   call dein#add('ryanoasis/vim-devicons')
+  call dein#add('luochen1990/rainbow')
 
   call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
@@ -119,6 +120,8 @@ nmap <Leader>f :Ag<Space><CR>
 
 map <silent> <C-n> :NERDTreeTabsToggle<CR>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " buffers
 map bn :bn<cr>
