@@ -59,7 +59,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('luochen1990/rainbow')
 
-  call dein#add('tpope/vim-markdown')
+  call dein#add('preservim/vim-markdown')
   call dein#add('slim-template/vim-slim')
   call dein#add('isaacsloan/vim-slang')
   call dein#add('kchmck/vim-coffee-script')
