@@ -47,6 +47,7 @@ if dein#load_state('~/.vim/bundles')
 
   call dein#add('tomtom/tcomment_vim')
   call dein#add('tpope/vim-endwise')
+  call dein#add('tpope/vim-surround')
   call dein#add('ervandew/supertab')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('wsdjeg/vim-fetch')
