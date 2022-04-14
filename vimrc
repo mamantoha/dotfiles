@@ -58,6 +58,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('luochen1990/rainbow')
   call dein#add('bronson/vim-trailing-whitespace')
+  call dein#add('editorconfig/editorconfig-vim')
 
   call dein#add('tpope/vim-markdown')
   call dein#add('slim-template/vim-slim')
