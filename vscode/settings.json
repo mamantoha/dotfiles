@@ -97,5 +97,7 @@
     "upcase"
   ],
   "crystal-lang.compiler": "/snap/bin/crystal",
-  "editor.bracketPairColorization.enabled": true
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.fontSize": 13
 }
