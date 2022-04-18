@@ -38,6 +38,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('preservim/nerdtree')
   call dein#add('xuyuanp/nerdtree-git-plugin')
   call dein#add('jistr/vim-nerdtree-tabs')
+  call dein#add('unkiwii/vim-nerdtree-sync')
 
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-fugitive')
@@ -100,6 +101,8 @@ endif
 "End dein Scripts-------------------------
 "
 " set cursorcolumn "highlight the current column. Visible in GUI mode only.
+
+let g:nerdtree_sync_cursorline = 1
 
 let g:airline#extensions#tabline#enabled = 1
 if !exists('g:airline_symbols')
