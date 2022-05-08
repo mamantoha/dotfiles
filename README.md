@@ -70,6 +70,8 @@ sh ./installer.sh ~/.config/nvim/bundles
 
 #### Fonts
 
+- <https://github.com/ryanoasis/nerd-fonts>
+
 ```
 echo -e "\e[1mbold\e[0m"
 echo -e "\e[3mitalic\e[0m"
