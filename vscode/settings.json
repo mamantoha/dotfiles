@@ -20,7 +20,7 @@
   "window.titleBarStyle": "custom",
   "window.openFoldersInNewWindow": "on",
   "window.newWindowDimensions": "maximized",
-  "editor.fontFamily": "'JetBrains Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.minimap.enabled": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
