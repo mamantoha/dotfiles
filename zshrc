@@ -141,6 +141,10 @@ wttr2() {
   curl -H "Accept-Language: uk" https://v2.wttr.in/$1
 }
 
+dr() {
+  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[0] | "\(.date): \(.val) дохлої русні"'
+}
+
 rate.sx() {
   curl -H "Accept-Language: uk" https://rate.sx/$1
 }
