@@ -36,5 +36,8 @@
   "workbench.editor.decorations.colors": true,
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
-  "terminal.integrated.fontSize": 13
+  "terminal.integrated.fontSize": 13,
+  "redhat.telemetry.enabled": true,
+  "markdown.experimental.validate.enabled": true,
+  "git.experimental.mergeEditor": true
 }
