@@ -39,5 +39,11 @@
   "terminal.integrated.fontSize": 13,
   "redhat.telemetry.enabled": true,
   "markdown.experimental.validate.enabled": true,
-  "git.experimental.mergeEditor": true
+  "git.experimental.mergeEditor": true,
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
