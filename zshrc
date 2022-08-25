@@ -150,7 +150,7 @@ weatherin() {
 }
 
 dr() {
-  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[0] | "\(.date): \(.val) дохлої русні"'
+  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[-1] | "\(.at): \(.val) дохлої русні"'
 }
 
 rate.sx() {
