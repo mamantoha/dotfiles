@@ -6,10 +6,10 @@
   "files.trimFinalNewlines": true,
   "workbench.editor.enablePreview": false,
   "workbench.colorCustomizations": {
-    "statusBar.background" : "#333333",
-    "statusBar.noFolderBackground" : "#333333",
-    "statusBar.debuggingBackground": "#511f1f",
-},
+    "statusBar.background": "#333333",
+    "statusBar.noFolderBackground": "#333333",
+    "statusBar.debuggingBackground": "#511f1f"
+  },
   "editor.scrollBeyondLastLine": false,
   "workbench.editor.labelFormat": "default",
   "workbench.tree.indent": 20,
