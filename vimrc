@@ -22,7 +22,7 @@ elseif has('unix')
   set clipboard=unnamedplus
 end
 
-set mouse=a
+set mouse=
 
 " Required:
 set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
