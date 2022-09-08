@@ -46,5 +46,5 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.experimental.stickyScroll.enabled": true
+  "editor.stickyScroll.enabled": true
 }
