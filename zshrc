@@ -61,6 +61,7 @@ plugins=(
   command-not-found
   zsh-syntax-highlighting
   zsh-autosuggestions
+  git-auto-fetch
 )
 
 # User configuration
