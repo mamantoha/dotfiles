@@ -17,7 +17,6 @@
   "window.openFoldersInNewWindow": "on",
   "window.newWindowDimensions": "maximized",
   "editor.fontFamily": "'JetBrainsMono Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.minimap.enabled": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -46,5 +45,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.stickyScroll.enabled": true
+  "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": false
 }
