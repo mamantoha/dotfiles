@@ -163,18 +163,16 @@ export TERM="xterm-256color"
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
-export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 OS=`uname -a`
 
 if [[ "$OS" =~ "Darwin" ]]; then
   PATH=$PATH:/usr/local/sbin
-  PATH=$HOME/Library/Python/3.9/bin:$PATH
+  PATH=$HOME/Library/Python/3.10/bin:$PATH
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
-  export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 elif [[ "$OS" =~ "Linux" ]]; then
   if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
