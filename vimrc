@@ -72,6 +72,7 @@ if dein#load_state('~/.vim/bundles')
   call dein#add('peterhoeg/vim-qml')
   call dein#add('mtdl9/vim-log-highlighting')
   call dein#add('dart-lang/dart-vim-plugin')
+  call dein#add('rust-lang/rust.vim')
 
   call dein#add('vim-ruby/vim-ruby')
   call dein#add('tpope/vim-rails')
