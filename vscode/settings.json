@@ -29,6 +29,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
   "editor.fontLigatures": true,
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.badges": true,
