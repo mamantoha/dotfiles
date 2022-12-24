@@ -50,5 +50,9 @@
   },
   "editor.stickyScroll.enabled": true,
   "editor.minimap.enabled": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "rubyLsp.rubyVersionManager": "rbenv"
 }
