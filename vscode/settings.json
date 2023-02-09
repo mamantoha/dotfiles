@@ -40,8 +40,6 @@
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   "terminal.integrated.fontSize": 13,
   "redhat.telemetry.enabled": true,
-  "markdown.experimental.validate.enabled": true,
-  "git.experimental.mergeEditor": true,
   "[less]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -57,6 +55,20 @@
   "rubyLsp.rubyVersionManager": "rbenv",
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
+  },
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true
   },
   "ruby.intellisense": "rubyLocate"
 }
