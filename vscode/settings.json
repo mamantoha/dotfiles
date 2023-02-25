@@ -70,5 +70,6 @@
     "selectionRanges": true,
     "semanticHighlighting": true
   },
-  "ruby.intellisense": "rubyLocate"
+  "ruby.intellisense": "rubyLocate",
+  "git.openRepositoryInParentFolders": "never"
 }
