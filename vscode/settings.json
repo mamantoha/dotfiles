@@ -6,8 +6,8 @@
   "files.trimFinalNewlines": true,
   "workbench.editor.enablePreview": false,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#1F1F1F",
-    "statusBar.noFolderBackground": "#1F1F1F",
+    "statusBar.background": "#323233",
+    "statusBar.noFolderBackground": "#323233",
     "statusBar.debuggingBackground": "#0078D4"
   },
   "editor.scrollBeyondLastLine": false,
@@ -71,5 +71,6 @@
     "semanticHighlighting": true
   },
   "ruby.intellisense": "rubyLocate",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "Visual Studio Dark"
 }
