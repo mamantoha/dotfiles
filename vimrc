@@ -35,6 +35,7 @@ if dein#load_state('~/.vim/bundles')
   " Required:
   call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('wsdjeg/dein-ui.vim')
   call dein#add('preservim/nerdtree')
   call dein#add('xuyuanp/nerdtree-git-plugin')
   call dein#add('jistr/vim-nerdtree-tabs')
