@@ -1,7 +1,6 @@
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
+" Ward off unexpected things that your distro might have made, as
+" well as sanely reset options when re-sourcing .vimrc
+set nocompatible
 
 " Remap leader to comma
 let mapleader = ","
@@ -24,86 +23,93 @@ end
 
 set mouse=
 
-" Required:
-set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+" Set Dein base path (required)
+let s:dein_base = '~/.cache/dein'
 
-" Required:
-if dein#load_state('~/.vim/bundles')
-  call dein#begin('~/.vim/bundles')
+" Set Dein source path (required)
+let s:dein_src = '~/.cache/dein/repos/github.com/Shougo/dein.vim'
 
-  " Let dein manage dein
-  " Required:
-  call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
+" Set Dein runtime path (required)
+execute 'set runtimepath+=' . s:dein_src
 
-  call dein#add('wsdjeg/dein-ui.vim')
-  call dein#add('preservim/nerdtree')
-  call dein#add('xuyuanp/nerdtree-git-plugin')
-  call dein#add('jistr/vim-nerdtree-tabs')
-  call dein#add('unkiwii/vim-nerdtree-sync')
+" Call Dein initialization (required)
+call dein#begin(s:dein_base)
 
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('tpope/vim-fugitive')
+call dein#add(s:dein_src)
 
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
-  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
+" Your plugins go here:
+call dein#add('wsdjeg/dein-ui.vim')
+call dein#add('preservim/nerdtree')
+call dein#add('xuyuanp/nerdtree-git-plugin')
+call dein#add('jistr/vim-nerdtree-tabs')
+call dein#add('unkiwii/vim-nerdtree-sync')
 
-  call dein#add('tpope/vim-commentary')
-  call dein#add('tpope/vim-endwise')
-  call dein#add('tpope/vim-surround')
-  call dein#add('ervandew/supertab')
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('wsdjeg/vim-fetch')
+call dein#add('airblade/vim-gitgutter')
+call dein#add('tpope/vim-fugitive')
 
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('dracula/vim')
-  call dein#add('ryanoasis/vim-devicons')
-  call dein#add('luochen1990/rainbow')
-  call dein#add('bronson/vim-trailing-whitespace')
-  call dein#add('editorconfig/editorconfig-vim')
+call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
 
-  call dein#add('tpope/vim-markdown')
-  call dein#add('slim-template/vim-slim')
-  call dein#add('isaacsloan/vim-slang')
-  call dein#add('kchmck/vim-coffee-script')
-  call dein#add('isRuslan/vim-es6')
-  call dein#add('elixir-lang/vim-elixir')
-  call dein#add('posva/vim-vue')
-  call dein#add('vim-crystal/vim-crystal')
-  call dein#add('peterhoeg/vim-qml')
-  call dein#add('mtdl9/vim-log-highlighting')
-  call dein#add('dart-lang/dart-vim-plugin')
-  call dein#add('rust-lang/rust.vim')
+call dein#add('tpope/vim-commentary')
+call dein#add('tpope/vim-endwise')
+call dein#add('tpope/vim-surround')
+call dein#add('ervandew/supertab')
+call dein#add('jiangmiao/auto-pairs')
+call dein#add('wsdjeg/vim-fetch')
 
-  call dein#add('vim-ruby/vim-ruby')
-  call dein#add('tpope/vim-rails')
-  call dein#add('tpope/vim-bundler')
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
+call dein#add('dracula/vim')
+call dein#add('ryanoasis/vim-devicons')
+call dein#add('luochen1990/rainbow')
+call dein#add('bronson/vim-trailing-whitespace')
+call dein#add('editorconfig/editorconfig-vim')
 
-  call dein#add('neomake/neomake')
+call dein#add('tpope/vim-markdown')
+call dein#add('slim-template/vim-slim')
+call dein#add('isaacsloan/vim-slang')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('isRuslan/vim-es6')
+call dein#add('elixir-lang/vim-elixir')
+call dein#add('posva/vim-vue')
+call dein#add('vim-crystal/vim-crystal')
+call dein#add('peterhoeg/vim-qml')
+call dein#add('mtdl9/vim-log-highlighting')
+call dein#add('dart-lang/dart-vim-plugin')
+call dein#add('rust-lang/rust.vim')
 
-  call dein#add('vim-scripts/LargeFile')
+call dein#add('vim-ruby/vim-ruby')
+call dein#add('tpope/vim-rails')
+call dein#add('tpope/vim-bundler')
 
-  call dein#add('wakatime/vim-wakatime')
-  call dein#add('tmux-plugins/vim-tmux')
+call dein#add('neomake/neomake')
 
-  " Required:
-  call dein#end()
-  call dein#save_state()
+call dein#add('vim-scripts/LargeFile')
+
+call dein#add('wakatime/vim-wakatime')
+call dein#add('tmux-plugins/vim-tmux')
+
+" Finish Dein initialization (required)
+call dein#end()
+
+" Attempt to determine the type of a file based on its name and possibly its
+" contents. Use this to allow intelligent auto-indenting for each filetype,
+" and for plugins that are filetype specific.
+if has('filetype')
+  filetype indent plugin on
 endif
 
-" Required:
-filetype plugin indent on
-syntax enable
+" Enable syntax highlighting
+if has('syntax')
+  syntax on
+endif
 
-" If you want to install not installed plugins on startup.
+" Uncomment if you want to install not-installed plugins on startup.
 if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
-"
 " set cursorcolumn "highlight the current column. Visible in GUI mode only.
-
 let g:nerdtree_sync_cursorline = 1
 
 let g:airline#extensions#tabline#enabled = 1
