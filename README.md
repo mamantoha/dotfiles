@@ -53,21 +53,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * `prefix` + `I` - install plugins
 * `prefix` + `U` - update plugins
 
-#### Vim
-
-```
-mkdir -p ~/.vim/bundles
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.vim/bundles
-```
-
-#### Neovim
-
-```
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.config/nvim/bundles
-```
-
 #### Fonts
 
 - <https://github.com/ryanoasis/nerd-fonts>
