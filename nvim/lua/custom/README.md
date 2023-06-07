@@ -1,6 +1,7 @@
-# NvChad example config
+# Neovim NvChad config
 
 ## Links
+
 - https://nvchad.com/
 - https://github.com/NvChad/nvchad
 
