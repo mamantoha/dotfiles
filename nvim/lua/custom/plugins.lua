@@ -63,6 +63,9 @@ local plugins = {
   {
     "vim-crystal/vim-crystal", lazy = false
   },
+  {
+    "kchmck/vim-coffee-script", lazy = false
+  },
 }
 
 return plugins
