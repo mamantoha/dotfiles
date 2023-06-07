@@ -2,7 +2,7 @@
 	name = Anton Maminov
 	email = anton.linux@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
