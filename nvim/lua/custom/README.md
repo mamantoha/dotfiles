@@ -1,3 +1,9 @@
-# Example_config
+# NvChad example config
 
-This can be used as an example custom config for NvChad, this branch is a minimal one. Do check the feature_full branch if you need all the ease in your config.
+## Links
+- https://nvchad.com/
+- https://github.com/NvChad/nvchad
+
+## Install
+
+https://nvchad.com/docs/quickstart/Install
