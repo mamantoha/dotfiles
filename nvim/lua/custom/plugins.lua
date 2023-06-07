@@ -69,7 +69,9 @@ local plugins = {
   {
     "isaacsloan/vim-slang", lazy = false
   },
-
+  {
+    "wakatime/vim-wakatime", lazy = false
+  },
 }
 
 return plugins
