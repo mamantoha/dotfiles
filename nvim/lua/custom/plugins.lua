@@ -66,6 +66,10 @@ local plugins = {
   {
     "kchmck/vim-coffee-script", lazy = false
   },
+  {
+    "isaacsloan/vim-slang", lazy = false
+  },
+
 }
 
 return plugins
