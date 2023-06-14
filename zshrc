@@ -66,9 +66,6 @@ plugins=(
 
 # User configuration
 
-# export PATH="/home/mama/.rvm/gems/ruby-2.3.1@rails-rest-api/bin:/home/mama/.rvm/gems/ruby-2.3.1@global/bin:/home/mama/.rvm/rubies/ruby-2.3.1/bin:/home/mama/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 bindkey '\e[1~'   beginning-of-line  # Linux console
@@ -89,8 +86,6 @@ bindkey '\eOF'    end-of-line        # gnome-terminal
 # else
 #   export EDITOR='mvim'
 # fi
-
-export EDITOR=nvim
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -116,12 +111,14 @@ setopt HIST_FIND_NO_DUPS
 
 zstyle ':completion:*' insert-tab false
 
-# if type nvim > /dev/null 2>&1; then
-#   alias vim='nvim'
-#   export VISUAL="nvim"
-# else
-#   export VISUAL="vim"
-# fi
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+  export EDITOR='nvim'
+  export VISUAL='nvim'
+else
+  export EDITOR='vim'
+  export VISUAL='vim'
+fi
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -144,8 +141,6 @@ man() {
 alias grep='grep --color=auto'
 
 alias tmux='env TERM=screen-256color tmux'
-
-alias vim='nvim'
 
 killzombies() {
   pids=$(ps -A -ostat,ppid | awk '/[zZ]/ && !a[$2]++ {print $2}');
