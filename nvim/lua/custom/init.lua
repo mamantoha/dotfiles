@@ -11,3 +11,7 @@ local g = vim.g
 
 g.mapleader = ","
 opt.whichwrap = ""
+
+-- Reselect visual block after indent/outdent
+vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true})
+vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true})
