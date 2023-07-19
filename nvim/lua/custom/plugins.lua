@@ -78,7 +78,7 @@ local plugins = {
         })
 
         -- remove trailing whitespace with a keybinding
-        vim.keymap.set('n', '<Leader>t', require('whitespace-nvim').trim, { desc = 'Remove trailing whitespaces'})
+        vim.keymap.set('n', '<Leader>rt', require('whitespace-nvim').trim, { desc = 'Remove trailing whitespaces'})
     end
   },
 
