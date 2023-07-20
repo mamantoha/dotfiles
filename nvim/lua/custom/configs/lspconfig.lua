@@ -13,5 +13,11 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.ruby_ls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "ruby" },
+})
+
 -- 
 -- lspconfig.pyright.setup { blabla}
