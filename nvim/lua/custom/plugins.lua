@@ -81,6 +81,10 @@ local plugins = {
         vim.keymap.set('n', '<Leader>rt', require('whitespace-nvim').trim, { desc = 'Remove trailing whitespaces'})
     end
   },
+  {
+    "lewis6991/fileline.nvim",
+    lazy = false,
+  },
 
   -- To make a plugin not be loaded
   -- {
