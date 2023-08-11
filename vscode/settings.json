@@ -47,7 +47,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.stickyScroll.enabled": true,
-  "editor.minimap.enabled": false,
   "git.autofetch": true,
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -72,5 +71,6 @@
   },
   "ruby.intellisense": "rubyLocate",
   "git.openRepositoryInParentFolders": "never",
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.minimap.enabled": false
 }
