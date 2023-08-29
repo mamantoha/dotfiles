@@ -72,5 +72,6 @@
   "ruby.intellisense": "rubyLocate",
   "git.openRepositoryInParentFolders": "never",
   "workbench.colorTheme": "Visual Studio Dark",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "rubyLsp.enableExperimentalFeatures": true
 }
