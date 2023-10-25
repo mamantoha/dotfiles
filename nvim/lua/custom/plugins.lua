@@ -103,6 +103,10 @@ local plugins = {
     "vim-crystal/vim-crystal", lazy = false
   },
   {
+    "mityu/vim-applescript", lazy = false
+  },
+
+  {
     "kchmck/vim-coffee-script", lazy = false
   },
   {
