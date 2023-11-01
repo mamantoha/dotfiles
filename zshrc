@@ -173,7 +173,7 @@ weatherin() {
 }
 
 dr() {
-  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[-1] | "\(.at): \(.val) дохлої русні"'
+  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[-1] as $current | .data[-2] as $previous | "\($current.at): \($current.val) дохлої русні (+\($current.val - $previous.val) за попередню добу)"'
 }
 
 rate.sx() {
