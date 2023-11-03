@@ -22,9 +22,16 @@ vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true})
 -- (likely a different one than last time), and when using xxd(1) to filter
 -- and edit binary files (it transforms input files back and forth, causing
 -- them to have dual nature, so to speak)
+function RestoreCursorPosition()
+  local line = vim.fn.line("'\"")
+  if line > 1 and line <= vim.fn.line("$") and vim.bo.filetype ~= 'commit' and vim.fn.index({'xxd', 'gitrebase'}, vim.bo.filetype) == -1 then
+    vim.cmd('normal! g`"')
+  end
+end
+
 if vim.fn.has("autocmd") then
   vim.cmd([[
-    autocmd BufReadPost * lua if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") and vim.bo.filetype ~= 'commit' and vim.fn.index({'xxd', 'gitrebase'}, vim.bo.filetype) == -1 then vim.cmd('normal! g`"') end
+    autocmd BufReadPost * lua RestoreCursorPosition()
   ]])
 end
 
