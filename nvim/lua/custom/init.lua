@@ -35,5 +35,4 @@ if vim.fn.has("autocmd") then
   ]])
 end
 
-
 opt.formatoptions:append('r')
