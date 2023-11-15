@@ -142,6 +142,8 @@ alias grep='grep --color=auto'
 
 alias tmux='env TERM=screen-256color tmux'
 
+alias update_powerlevel10k='git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull'
+
 killzombies() {
   pids=$(ps -A -ostat,ppid | awk '/[zZ]/ && !a[$2]++ {print $2}');
 
