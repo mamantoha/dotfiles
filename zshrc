@@ -144,7 +144,8 @@ alias tmux='env TERM=screen-256color tmux'
 
 alias update_powerlevel10k='git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull'
 
-alias rmweather='rm "${TMPDIR:-/tmp}/.dracula-tmux-weather-last-exec"'
+alias tmpdir="${TMPDIR:-/tmp}"
+alias rmweather='rm "/tmp/.dracula-tmux-weather-last-exec"'
 
 killzombies() {
   pids=$(ps -A -ostat,ppid | awk '/[zZ]/ && !a[$2]++ {print $2}');
