@@ -24,7 +24,12 @@ vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true})
 -- them to have dual nature, so to speak)
 function RestoreCursorPosition()
   local line = vim.fn.line("'\"")
-  if line > 1 and line <= vim.fn.line("$") and vim.bo.filetype ~= 'commit' and vim.fn.index({'xxd', 'gitrebase'}, vim.bo.filetype) == -1 then
+  local filepath = vim.fn.expand('%:p') -- Get the full path of the current file
+
+  -- Exclude filetypes 'commit', 'xxd', 'gitrebase', or specific file paths
+  if line > 1 and line <= vim.fn.line("$") and vim.bo.filetype ~= 'commit'
+     and vim.fn.index({'xxd', 'gitrebase'}, vim.bo.filetype) == -1
+     and not string.match(filepath, "COMMIT_EDITMSG") then -- Example path check
     vim.cmd('normal! g`"')
   end
 end
