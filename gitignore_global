@@ -2,3 +2,5 @@
 .desktop
 /.vscode
 /.idea/
+# other
+config/pspdfkit_jwt.pem_localhost
