@@ -178,7 +178,8 @@ weatherin() {
 }
 
 dr() {
-  curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[-1] as $current | .data[-2] as $previous | "\($current.at): \($current.val) дохлої русні (+\($current.val - $previous.val) за попередню добу)"'
+  # curl -s https://uadata.net/ukraine-russia-war-2022/people.json | jq -r '.data[-1] as $current | .data[-2] as $previous | "\($current.at): \($current.val) дохлої русні (+\($current.val - $previous.val) за попередню добу)"'
+  curl -s https://russianwarship.rip/api/v2/statistics/latest | jq -r '.data.date as $date | .data.stats as $stats | .data.increase as $increase | "\($date): \($stats.personnel_units) дохлої русні (+\($increase.personnel_units) за попередню добу)"'
 }
 
 rate.sx() {
