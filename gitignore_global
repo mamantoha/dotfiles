@@ -3,4 +3,4 @@
 /.vscode
 /.idea/
 # other
-config/pspdfkit_jwt.pem_localhost
+config/pspdfkit_jwt.pem_*
