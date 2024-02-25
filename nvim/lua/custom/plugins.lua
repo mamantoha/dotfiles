@@ -59,26 +59,21 @@ local plugins = {
     end,
   },
   {
-    'johnfrankmorgan/whitespace.nvim',
+    -- "cappyzawa/trim.nvim",
+    "mamantoha/trim.nvim",
     lazy = false,
-    config = function ()
-        require('whitespace-nvim').setup({
-            -- configuration options and their defaults
+    branch = 'highlight',
+    config = function()
+      require('trim').setup({
+        ft_blocklist = { 'TelescopePrompt', 'Trouble', 'help' },
 
-            -- `highlight` configures which highlight is used to display
-            -- trailing whitespace
-            highlight = 'DiffDelete',
+        patterns = {
+          [[%s/\(\n\n\)\n\+/\1/]], -- replace multiple blank lines with a single line
+        },
 
-            -- `ignored_filetypes` configures which filetypes to ignore when
-            -- displaying trailing whitespace
-            ignored_filetypes = { 'TelescopePrompt', 'Trouble', 'help' },
-
-            -- `ignore_terminal` configures whether to ignore terminal buffers
-            ignore_terminal = true,
-        })
-
-        -- remove trailing whitespace with a keybinding
-        vim.keymap.set('n', '<Leader>rt', require('whitespace-nvim').trim, { desc = 'Remove trailing whitespaces'})
+        trim_on_write = true,
+        highlight = true
+      })
     end
   },
   {
