@@ -59,10 +59,8 @@ local plugins = {
     end,
   },
   {
-    -- "cappyzawa/trim.nvim",
-    "mamantoha/trim.nvim",
+    "cappyzawa/trim.nvim",
     lazy = false,
-    branch = 'highlight',
     config = function()
       require('trim').setup({
         ft_blocklist = { 'TelescopePrompt', 'Trouble', 'help' },
