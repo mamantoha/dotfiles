@@ -42,6 +42,8 @@ end)
 vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true})
 vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true})
 
+vim.opt.formatoptions:append('r')
+
 -- When editing a file, always jump to the last known cursor position.
 -- Don't do it when the position is invalid, when inside an event handler,
 -- for a commit or rebase message
