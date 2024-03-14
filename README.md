@@ -74,12 +74,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - <https://nvchad.com/docs/quickstart/install>
 
 ```sh
-# Install NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 # Optional
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
-ls -s ~/dotfiles/nvim/lua/custom ~/.config/nvim/lua/custom/
+# Install NvChad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+ls -s ~/dotfiles/nvim ~/.config/nvim
 ```
