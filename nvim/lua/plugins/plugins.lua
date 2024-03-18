@@ -11,7 +11,16 @@ return {
     lazy = false,
     config = function()
       require('trim').setup({
-        ft_blocklist = { 'TelescopePrompt', 'Trouble', 'help', 'nvdash', 'nvcheatsheet' },
+        ft_blocklist = {
+          'TelescopePrompt',
+          'Trouble',
+          'help',
+          'nvdash',
+          'nvcheatsheet',
+          'mason',
+          'notify',
+          'lazy'
+        },
 
         patterns = {
           [[%s/\(\n\n\)\n\+/\1/]], -- replace multiple blank lines with a single line
