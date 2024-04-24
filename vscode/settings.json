@@ -50,7 +50,9 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "rubyLsp.rubyVersionManager": "rbenv",
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rbenv"
+  },
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
