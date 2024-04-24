@@ -27,7 +27,7 @@ end
 --   capabilities = capabilities,
 -- }
 
-lspconfig.ruby_ls.setup({
+lspconfig.ruby_lsp.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "ruby" },
