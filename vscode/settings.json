@@ -15,7 +15,7 @@
 "workbench.tree.indent": 20,
   "window.openFoldersInNewWindow": "on",
   "window.newWindowDimensions": "maximized",
-  "editor.fontFamily": "'JetBrainsMono Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Cascadia Code','JetBrainsMono Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
