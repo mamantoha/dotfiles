@@ -75,5 +75,7 @@
   "workbench.colorTheme": "Visual Studio Dark",
   "editor.minimap.enabled": false,
   "rubyLsp.enableExperimentalFeatures": true,
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true
 }
