@@ -7,6 +7,28 @@ return {
     end,
   },
   {
+    "fedepujol/move.nvim",
+    lazy = false,
+    config = function()
+      require('move').setup({
+        line = {
+          enable = true, -- Enables line movement
+          indent = true  -- Toggles indentation
+        },
+        block = {
+          enable = true, -- Enables block movement
+          indent = true  -- Toggles indentation
+        },
+        word = {
+          enable = false, -- Enables word movement
+        },
+        char = {
+          enable = false -- Enables char movement
+        }
+      })
+    end
+  },
+  {
     "cappyzawa/trim.nvim",
     lazy = false,
     config = function()
