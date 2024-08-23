@@ -96,5 +96,6 @@
   "rubyLsp.enableExperimentalFeatures": true,
   "window.titleBarStyle": "custom",
   "editor.unicodeHighlight.invisibleCharacters": true,
-  "editor.unicodeHighlight.ambiguousCharacters": true
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "rubyLsp.rubyExecutablePath": "~/.anyenv/envs/rbenv/shims/ruby"
 }
