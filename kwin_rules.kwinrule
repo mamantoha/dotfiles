@@ -8,7 +8,7 @@ ignoregeometry=true
 ignoregeometryrule=2
 noborder=true
 noborderrule=2
-position=1087,572
+position=1087,552
 positionrule=3
 size=620,349
 sizerule=3
@@ -87,6 +87,18 @@ title=Spotify
 titlematch=1
 types=1
 wmclass=spotify
+wmclassmatch=1
+
+[Spotify MiniPlayer]
+Description=Spotify MiniPlayer
+above=true
+aboverule=2
+position=1438,692
+positionrule=2
+title=Spotify MiniPlayer
+titlematch=1
+types=1
+wmclass=chromium-browser
 wmclassmatch=1
 
 [Thunderbird]
