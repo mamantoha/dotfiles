@@ -13,7 +13,7 @@ chsh -s $(which zsh)
 
 ```sh
 xcode-select --install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/homebrew/install/head/install.sh)"
 brew install tmux anyenv python the_silver_searcher neovim ripgrep
 pip3 install --user powerline-status
 ```
