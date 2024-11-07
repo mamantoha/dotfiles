@@ -51,10 +51,6 @@ Type `p10k configure` to access the builtin configuration wizard.
 
 ### fzf
 
-```console
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
-```
-
 * `Ctrl+T` to search for files
 * `Ctrl+R` to search for commands in a history
 
