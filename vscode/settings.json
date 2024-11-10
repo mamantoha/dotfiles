@@ -91,11 +91,11 @@
   },
   "ruby.intellisense": "rubyLocate",
   "git.openRepositoryInParentFolders": "never",
-  "workbench.colorTheme": "Visual Studio Dark",
   "editor.minimap.enabled": false,
   "rubyLsp.enableExperimentalFeatures": true,
   "window.titleBarStyle": "custom",
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
-  "rubyLsp.rubyExecutablePath": "~/.anyenv/envs/rbenv/shims/ruby"
+  "rubyLsp.rubyExecutablePath": "~/.anyenv/envs/rbenv/shims/ruby",
+  "workbench.colorTheme": "Visual Studio Dark"
 }
