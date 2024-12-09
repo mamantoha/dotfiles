@@ -92,10 +92,12 @@
   "ruby.intellisense": "rubyLocate",
   "git.openRepositoryInParentFolders": "never",
   "editor.minimap.enabled": false,
-  "rubyLsp.enableExperimentalFeatures": true,
   "window.titleBarStyle": "custom",
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
   "rubyLsp.rubyExecutablePath": "~/.anyenv/envs/rbenv/shims/ruby",
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "rubyLsp.featureFlags": {
+    "all": true
+  }
 }
