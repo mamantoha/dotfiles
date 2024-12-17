@@ -186,6 +186,10 @@ rate.sx() {
   curl -H "Accept-Language: uk" https://rate.sx/$1
 }
 
+wakatime() {
+  curl -s "https://wakatime.com/api/v1/users/mamantoha/status_bar/today?api_key=$(grep -i 'api_key' ~/.wakatime.cfg | awk -F '= ' '{print $2}' | tr -d '\r\n')" | jq -r '"Today'\''s coding time: \(.data.grand_total.text)"'
+}
+
 export TERM="xterm-256color"
 
 export PATH=/usr/local/bin:$PATH
