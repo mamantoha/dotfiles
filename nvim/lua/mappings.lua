@@ -12,6 +12,8 @@ end, { desc = "File Format with conform" })
 
 map("i", "jk", "<ESC>", { desc = "Escape insert mode" })
 
+map("n", "<leader>fc", "<cmd>Telescope neoclip<CR>", { desc = "telescope neoclip" })
+
 local opts = { noremap = true, silent = true }
 -- Normal-mode commands
 vim.keymap.set('n', '<A-j>', ':MoveLine(1)<CR>', opts)
