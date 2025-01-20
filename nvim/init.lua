@@ -44,6 +44,9 @@ vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true})
 
 vim.opt.formatoptions:append('r')
 
+-- Controls the font used by Neovide
+vim.o.guifont = "JetBrainsMono Nerd Font:h11"
+
 -- When editing a file, always jump to the last known cursor position.
 -- Don't do it when the position is invalid, when inside an event handler,
 -- for a commit or rebase message
