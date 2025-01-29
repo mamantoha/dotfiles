@@ -38,6 +38,7 @@
   "vim-coffee-script": { "branch": "master", "commit": "28421258a8dde5a50deafbfc19cd9873cacfaa79" },
   "vim-crystal": { "branch": "master", "commit": "dc21188ec8c2ee77bb81dffca02e1a29d87cfd9f" },
   "vim-slang": { "branch": "master", "commit": "09febb37d8425f7ebbf7c353c4a63aabde163b97" },
+  "vim-slim": { "branch": "master", "commit": "a0a57f75f20a03d5fa798484743e98f4af623926" },
   "vim-wakatime": { "branch": "master", "commit": "cf51327a9e08935569614d1cb24e779ee9f45519" },
   "volt": { "branch": "main", "commit": "91fe3e82842a709443cdd61fc1a1315a5eb57a8d" },
   "which-key.nvim": { "branch": "main", "commit": "1f8d414f61e0b05958c342df9b6a4c89ce268766" }

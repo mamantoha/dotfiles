@@ -84,6 +84,10 @@ return {
     "isaacsloan/vim-slang", lazy = false
   },
   {
+    "slim-template/vim-slim", lazy = false
+  },
+
+  {
     "wakatime/vim-wakatime", lazy = false
   },
 }
