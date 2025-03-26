@@ -58,6 +58,10 @@ return {
     lazy = false,
   },
   {
+    "farmergreg/vim-lastplace",
+    lazy = false,
+  },
+  {
     "AckslD/nvim-neoclip.lua",
     dependencies = {
       {'kkharji/sqlite.lua', module = 'sqlite'},
