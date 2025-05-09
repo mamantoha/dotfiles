@@ -99,5 +99,6 @@
   "workbench.colorTheme": "Visual Studio Dark",
   "rubyLsp.featureFlags": {
     "all": true
-  }
+  },
+  "github.copilot.nextEditSuggestions.enabled": true
 }
