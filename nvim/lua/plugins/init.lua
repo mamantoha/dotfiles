@@ -12,4 +12,16 @@ return {
       git = { enable = true, ignore = false },
     },
   },
+
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require "configs.mason"
+    end,
+  },
+
+  {
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = { "williamboman/mason.nvim" },
+  },
 }
