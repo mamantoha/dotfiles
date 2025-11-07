@@ -233,10 +233,11 @@ fi
 function toggle-full-prompt() {
   if [[ -z "$P10K_PROMPT_HIDDEN" ]]; then
     P10K_PROMPT_HIDDEN=1
-    p10k display '*/dir'=hide '*/vcs'=hide '*/right'=hide
+    # p10k display '*/dir'=hide '*/vcs'=hide '*/right'=hide
+    p10k display '*/left'=hide '*/right'=hide
   else
     unset P10K_PROMPT_HIDDEN
-    p10k display '*/dir'=show '*/vcs'=show '*/right'=show
+    p10k display '*/left'=show '*/right'=show
   fi
 }
 
