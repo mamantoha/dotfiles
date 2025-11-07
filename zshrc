@@ -229,5 +229,18 @@ else
   [[ -r ~/.p10k.zsh ]] && source ~/.p10k.zsh
 fi
 
+# Toggle both left and right Powerlevel10k prompts
+function toggle-full-prompt() {
+  if [[ -z "$P10K_PROMPT_HIDDEN" ]]; then
+    P10K_PROMPT_HIDDEN=1
+    p10k display '*/dir'=hide '*/vcs'=hide '*/right'=hide
+  else
+    unset P10K_PROMPT_HIDDEN
+    p10k display '*/dir'=show '*/vcs'=show '*/right'=show
+  fi
+}
+
+zle -N toggle-full-prompt
+bindkey '^P' toggle-full-prompt   # Ctrl+P toggles full prompt visibility
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
