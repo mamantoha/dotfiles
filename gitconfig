@@ -18,7 +18,7 @@
 [alias]
 	lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	fix = commit --amend --no-edit
-	rrb = "!git reset --hard origin/$(git branch --show-current)"
+	rrb = "!git reset --hard origin/$(git_current_branch)"
 	psup = "!git push --set-upstream origin $(git_current_branch)"
 	default = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 	who = shortlog -ns --
