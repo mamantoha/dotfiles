@@ -204,6 +204,8 @@ if [[ "$OS" =~ "Darwin" ]]; then
   export LANG=en_US.UTF-8
   export PATH="/opt/homebrew/opt/llvm@15/bin:$PATH"
   eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  alias emptytrash='osascript -e "tell application \"Finder\" to empty trash" >/dev/null 2>&1'
 elif [[ "$OS" =~ "Linux" ]]; then
   if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
