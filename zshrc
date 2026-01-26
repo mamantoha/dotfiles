@@ -214,6 +214,7 @@ elif [[ "$OS" =~ "Linux" ]]; then
     PATH="/snap/bin:$PATH"
   fi
 
+  alias emptytrash='ktrash6 --empty'
 else
   # Unknown
 fi
