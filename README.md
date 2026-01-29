@@ -75,8 +75,5 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
-# Install NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-
-ls -s ~/dotfiles/nvim ~/.config/nvim
+ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
