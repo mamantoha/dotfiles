@@ -101,5 +101,7 @@
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "editor.formatOnSaveMode": "modifications",
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
