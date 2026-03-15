@@ -248,3 +248,5 @@ zle -N toggle-full-prompt
 bindkey '^P' toggle-full-prompt   # Ctrl+P toggles full prompt visibility
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
