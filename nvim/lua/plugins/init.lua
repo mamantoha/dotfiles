@@ -12,7 +12,10 @@ return {
       git = { enable = true, ignore = false },
     },
   },
-
+  {
+    'nvim-treesitter/nvim-treesitter',
+    branch = 'main',
+  },
   {
     "williamboman/mason.nvim",
     config = function()
