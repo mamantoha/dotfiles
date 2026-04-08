@@ -13,11 +13,6 @@ return {
     },
   },
   {
-    'nvim-treesitter/nvim-treesitter',
-    lazy = false,
-    build = ':TSUpdate'
-  },
-  {
     "williamboman/mason.nvim",
     config = function()
       require "configs.mason"
