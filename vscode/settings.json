@@ -106,5 +106,6 @@
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "terminal.integrated.shellIntegration.enabled": true,
   "gitlens.hovers.currentLine.over": "line",
-  "http.systemCertificatesNode": true
+  "http.systemCertificatesNode": true,
+  "claudeCode.preferredLocation": "panel"
 }
