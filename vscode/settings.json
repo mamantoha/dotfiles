@@ -101,11 +101,9 @@
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "editor.formatOnSaveMode": "modifications",
-  "workbench.colorTheme": "Visual Studio Dark",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "terminal.integrated.shellIntegration.enabled": true,
   "gitlens.hovers.currentLine.over": "line",
   "http.systemCertificatesNode": true,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "workbench.colorTheme": "Visual Studio Dark"
 }
