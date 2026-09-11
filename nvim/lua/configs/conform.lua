@@ -5,6 +5,7 @@ local options = {
     lua = { "stylua" },
     crystal = { "crystal" },
     json = { "prettier" },
+    markdown = { "prettier" },
   },
 }
 
