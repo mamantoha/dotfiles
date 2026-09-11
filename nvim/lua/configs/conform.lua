@@ -4,6 +4,7 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     crystal = { "crystal" },
+    json = { "prettier" },
   },
 }
 

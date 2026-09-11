@@ -10,6 +10,6 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-  ensure_installed = { "html", "cssls", "clangd", "ruby_lsp" },
+  ensure_installed = { "html", "cssls", "clangd", "ruby_lsp", "prettier" },
   automatic_installation = true,
 })
