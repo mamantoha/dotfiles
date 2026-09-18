@@ -27,6 +27,7 @@
     "terminal.ansiWhite": "#dcdccc",
     "terminal.ansiYellow": "#dfaf8f",
     "statusBar.background": "#323233",
+    "statusBar.inactiveBackground": "#323233",
     "statusBar.noFolderBackground": "#323233",
     "statusBar.debuggingBackground": "#0078D4"
   },
