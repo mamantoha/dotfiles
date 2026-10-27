@@ -198,7 +198,7 @@ OS=`uname -a`
 
 if [[ "$OS" =~ "Darwin" ]]; then
   PATH=$PATH:/usr/local/sbin
-  PATH=$HOME/Library/Python/3.10/bin:$PATH
+  PATH=$HOMEBREW_PREFIX/bin:$PATH
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
